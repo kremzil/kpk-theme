@@ -33,10 +33,10 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
 
     <!-- METRICS -->
     <div class="metrics badges">
-      <div class="badge"><strong class="meta-hero-strong">520+</strong><br><span class="meta-hero">projektov ročne</span></div>
-      <div class="badge"><strong class="meta-hero-strong">25</strong><br><span class="meta-hero">špecialistov</span></div>
-      <div class="badge"><strong class="meta-hero-strong">18</strong><br><span class="meta-hero">technológií</span></div>
-      <div class="badge"><strong class="meta-hero-strong">65 000 m²</strong><br><span class="meta-hero">tlače ročne</span></div>
+      <div class="badge"><strong class="meta-hero-strong">16 000+</strong><br><span class="meta-hero">projektov ročne</span></div>
+      <div class="badge"><strong class="meta-hero-strong">50+</strong><br><span class="meta-hero">špecialistov</span></div>
+      <div class="badge"><strong class="meta-hero-strong">32+</strong><br><span class="meta-hero">technológií</span></div>
+      <div class="badge"><strong class="meta-hero-strong">1 mil+ m²</strong><br><span class="meta-hero">tlače ročne</span></div>
     </div>
   </div>
 </section>

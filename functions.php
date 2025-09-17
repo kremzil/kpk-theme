@@ -216,6 +216,14 @@ add_action('template_redirect', function(){
     exit;
   }
 });
+// === 301 redirect: /profesionalny-polep-na-auto -> /polepy-vozidiel ===
+add_action('template_redirect', function(){
+  $req = $_SERVER['REQUEST_URI'] ?? '';
+  if (stripos($req, '/profesionalny-polep-na-auto') === 0) {
+    wp_redirect(home_url('/polepy-vozidiel/'), 301);
+    exit;
+  }
+});
 
 // === Header / Footer / Tech icons — Customizer ===
 add_action('customize_register', function($wp_customize){
@@ -282,5 +290,29 @@ $wp_customize->add_control('kpk_tech_text', [
     ]));
   }
 });
+
+
+add_action('wp_enqueue_scripts', function () {
+  $uri = get_stylesheet_directory_uri();
+  $dir = get_stylesheet_directory();
+
+  $styles = [
+    'kpk-base'       => '/assets/css/base.css',
+    'kpk-layout'     => '/assets/css/layout.css',
+    'kpk-components' => '/assets/css/components.css',
+    'kpk-utilities'  => '/assets/css/utilities.css',
+    'kpk-home'       => '/assets/css/home.css',
+  ];
+
+  foreach ($styles as $handle => $rel) {
+    $path = $dir . $rel;
+    $ver  = file_exists($path) ? filemtime($path) : null;
+    wp_enqueue_style($handle, $uri . $rel, [], $ver);
+  }
+
+  // style.css подключаем последним — он уже у тебя с «живой» версией, но на всякий:
+  $main = $dir . '/style.css';
+  wp_enqueue_style('theme', get_stylesheet_uri(), [], filemtime($main));
+}, 20);
 
 ?>

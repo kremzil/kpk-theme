@@ -142,21 +142,19 @@ get_header(); ?>
 <section class="section">
   <div class="container">
     <h2>Pred / Po</h2>
-    <div class="grid grid-2">
-      <?php for($i=1; $i<=8; $i++): ?>
-        <div class="card">
+    <div class="grid">
+       <div class="card">
           <div class="grid grid-2">
             <div>
-              <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/polepy/Audi-Q5-Before.webp')"></div>
               <div style="padding:8px"><p class="meta">Pred</p></div>
             </div>
             <div>
-              <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/polepy/Audi-Q5-After.webp')"></div>
               <div style="padding:8px"><p class="meta">Po</p></div>
             </div>
           </div>
         </div>
-      <?php endfor; ?>
     </div>
   </div>
 </section>
