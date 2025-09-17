@@ -6,7 +6,7 @@
       <p class="meta"><?php echo category_description(); ?></p>
     <?php endif; ?>
     <div class="chips">
-      <a class="chip" href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">Všetko</a>
+      <a class="chip" href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">VÅ¡etko</a>
       <?php
         $cats = get_categories(['hide_empty'=>1,'orderby'=>'name']);
         foreach($cats as $c){
@@ -39,7 +39,7 @@
       </div>
       <div class="section"><?php the_posts_pagination(); ?></div>
     <?php else: ?>
-      <p><?php _e('Žiadne príspevky','kpk'); ?></p>
+      <p><?php _e('Å½iadne prÃ­spevky','kpk'); ?></p>
     <?php endif; ?>
   </div>
 </section>

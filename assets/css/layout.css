@@ -25,7 +25,7 @@
   pointer-events:none;
 }
 .hero-video__content{
-  position:relative; z-index:2; color:#fff; padding:56px 0; /* внутренние отступы */
+  position:relative; z-index:2; color:#fff; padding:56px 0; /* Ð²Ð½ÑƒÑ‚Ñ€ÐµÐ½Ð½Ð¸Ðµ Ð¾Ñ‚ÑÑ‚ÑƒÐ¿Ñ‹ */
 }
 
 .hero-scroll{
@@ -39,7 +39,7 @@
 .hero-scroll:hover{ background:rgba(255,255,255,.22); }
 .hero-video[hidden]{ display:none !important; }
 
-/* адаптив */
+/* Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð² */
 @media (max-width:900px){
   .hero-video__wrap{ display: none;}
   .hero-video__content{ padding:36px 0; }
@@ -58,17 +58,17 @@
   margin: 0 0 12px;
   color: var(--color-bg);
 }
-/* Видео-hero не наследует фон/оверлей от .hero */
+/* Ð’Ð¸Ð´ÐµÐ¾-hero Ð½Ðµ Ð½Ð°ÑÐ»ÐµÐ´ÑƒÐµÑ‚ Ñ„Ð¾Ð½/Ð¾Ð²ÐµÑ€Ð»ÐµÐ¹ Ð¾Ñ‚ .hero */
 .hero-video{
   background: transparent !important;
-  padding: 0; /* чтобы видео было от края до края секции */
+  padding: 0; /* Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð²Ð¸Ð´ÐµÐ¾ Ð±Ñ‹Ð»Ð¾ Ð¾Ñ‚ ÐºÑ€Ð°Ñ Ð´Ð¾ ÐºÑ€Ð°Ñ ÑÐµÐºÑ†Ð¸Ð¸ */
   border-bottom: none !important;
 }
 
-/* если у базового .hero есть псевдооверлей (::before) — выключим его */
+/* ÐµÑÐ»Ð¸ Ñƒ Ð±Ð°Ð·Ð¾Ð²Ð¾Ð³Ð¾ .hero ÐµÑÑ‚ÑŒ Ð¿ÑÐµÐ²Ð´Ð¾Ð¾Ð²ÐµÑ€Ð»ÐµÐ¹ (::before) â€” Ð²Ñ‹ÐºÐ»ÑŽÑ‡Ð¸Ð¼ ÐµÐ³Ð¾ */
 .hero-video::before{ content:none !important; display:none !important; }
 
-/* текст поверх видео точно над медиаслоем */
+/* Ñ‚ÐµÐºÑÑ‚ Ð¿Ð¾Ð²ÐµÑ€Ñ… Ð²Ð¸Ð´ÐµÐ¾ Ñ‚Ð¾Ñ‡Ð½Ð¾ Ð½Ð°Ð´ Ð¼ÐµÐ´Ð¸Ð°ÑÐ»Ð¾ÐµÐ¼ */
 .hero-video .hero-video__content{ position:relative; z-index:2; }
 
 /* --- Badges / Logos strip --- */

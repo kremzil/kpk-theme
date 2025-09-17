@@ -17,7 +17,7 @@
     </div>
     <div class="section"><?php the_posts_pagination(); ?></div>
   <?php else: ?>
-    <p><?php _e('Žiadne príspevky','kpk'); ?></p>
+    <p><?php _e('Å½iadne prÃ­spevky','kpk'); ?></p>
   <?php endif; ?>
 </div>
 <?php get_footer(); ?>

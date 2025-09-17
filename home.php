@@ -2,11 +2,11 @@
 <section class="hero">
   <div class="container">
     <h1>Blog</h1>
-    <p class="meta">Tipy k outdooru, fóliám, POS a výstavným systémom.</p>
+    <p class="meta">Tipy k outdooru, fÃ³liÃ¡m, POS a vÃ½stavnÃ½m systÃ©mom.</p>
 
-    <!-- Категории-чипсы -->
+    <!-- ÐšÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸-Ñ‡Ð¸Ð¿ÑÑ‹ -->
     <div class="chips">
-      <a class="chip <?php if(is_home()) echo 'is-active'; ?>" href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">Všetko</a>
+      <a class="chip <?php if(is_home()) echo 'is-active'; ?>" href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">VÅ¡etko</a>
       <?php
         $cats = get_categories(['hide_empty'=>1,'orderby'=>'name']);
         foreach($cats as $c){
@@ -43,7 +43,7 @@
       </div>
       <div class="section"><?php the_posts_pagination(); ?></div>
     <?php else: ?>
-      <p><?php _e('Žiadne príspevky','kpk'); ?></p>
+      <p><?php _e('Å½iadne prÃ­spevky','kpk'); ?></p>
     <?php endif; ?>
   </div>
 </section>

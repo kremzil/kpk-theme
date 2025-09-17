@@ -7,7 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-<a class="sr-only" href="#content">Preskočiť na obsah</a>
+<a class="sr-only" href="#content">PreskoÄiÅ¥ na obsah</a>
 
 <header class="header">
   <div class="container header-inner">
@@ -24,7 +24,7 @@
 
     <!-- Burger (CSS-only) -->
     <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
-    <label for="nav-toggle" class="burger" aria-label="Otvoriť menu" role="button" tabindex="0">
+    <label for="nav-toggle" class="burger" aria-label="OtvoriÅ¥ menu" role="button" tabindex="0">
       <span></span><span></span><span></span>
     </label>
 
@@ -39,7 +39,7 @@
       ?>
       <a class="cta-btn header-cta"
          href="<?php echo esc_url(get_theme_mod('kpk_header_cta_url', '#kpk-quote')); ?>">
-        <?php echo esc_html(get_theme_mod('kpk_header_cta_text', __('Požiadať o cenovú ponuku','kpk'))); ?>
+        <?php echo esc_html(get_theme_mod('kpk_header_cta_text', __('PoÅ¾iadaÅ¥ o cenovÃº ponuku','kpk'))); ?>
       </a>
     </nav>
   </div>

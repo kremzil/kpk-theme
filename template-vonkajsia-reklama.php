@@ -1,54 +1,54 @@
 <?php
 /**
- * Template Name: Vonkajšia reklama (Landing)
- * Description: Kategórny landing pre vonkajšiu reklamu: podkategórie, benefity, materiály/technológie, galéria, FAQ, CTA.
+ * Template Name: VonkajÅ¡ia reklama (Landing)
+ * Description: KategÃ³rny landing pre vonkajÅ¡iu reklamu: podkategÃ³rie, benefity, materiÃ¡ly/technolÃ³gie, galÃ©ria, FAQ, CTA.
  */
 get_header(); ?>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <h1>Vonkajšia reklama, ktorá funguje</h1>
-    <p class="meta-hero">Billboardy, citylighty, backlighty, plachty a prizmy – vysoký dosah 24/7, veľký formát a jasný odkaz.</p>
+    <h1>VonkajÅ¡ia reklama, ktorÃ¡ funguje</h1>
+    <p class="meta-hero">Billboardy, citylighty, backlighty, plachty a prizmy â€“ vysokÃ½ dosah 24/7, veÄ¾kÃ½ formÃ¡t a jasnÃ½ odkaz.</p>
     <div class="badges" style="margin-top:12px">
-      <a class="hero-btn" href="#kpk-quote">Bezplatná konzultácia</a>
+      <a class="hero-btn" href="#kpk-quote">BezplatnÃ¡ konzultÃ¡cia</a>
     </div>
   </div>
 </section>
 
 <?php kpk_breadcrumbs(); ?>
 
-<!-- PRE KOHO / VÝHODY -->
+<!-- PRE KOHO / VÃHODY -->
 <section class="section">
   <div class="container">
-    <h2>Pre koho a na čo</h2>
+    <h2>Pre koho a na Äo</h2>
     <div class="grid grid-4">
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/viditelnost.webp' ); ?>')"></div>
         <div style="padding:16px">
-          <h3>Viditeľnosť</h3>
-          <p class="meta">Veľké formáty pritiahnu pozornosť počas dňa aj noci.</p>
+          <h3>ViditeÄ¾nosÅ¥</h3>
+          <p class="meta">VeÄ¾kÃ© formÃ¡ty pritiahnu pozornosÅ¥ poÄas dÅˆa aj noci.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/dosah.webp' ); ?>')"></div>
         <div style="padding:16px">
           <h3>Dosah</h3>
-          <p class="meta">Oslovíte tisíce ľudí na frekventovaných trasách.</p>
+          <p class="meta">OslovÃ­te tisÃ­ce Ä¾udÃ­ na frekventovanÃ½ch trasÃ¡ch.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/247.webp' ); ?>')"></div>
         <div style="padding:16px">
           <h3>24/7</h3>
-          <p class="meta">Vaša kampaň funguje nepretržite, bez prepínania.</p>
+          <p class="meta">VaÅ¡a kampaÅˆ funguje nepretrÅ¾ite, bez prepÃ­nania.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/brand.webp' ); ?>')"></div>
         <div style="padding:16px">
           <h3>Brand awareness</h3>
-          <p class="meta">Buduje povedomie a podporuje predajné akcie.</p>
+          <p class="meta">Buduje povedomie a podporuje predajnÃ© akcie.</p>
         </div>
       </div>
     </div>
@@ -58,71 +58,71 @@ get_header(); ?>
 <!-- SEO INTRO (short, no links) -->
 <section class="section">
   <div class="container">
-    <h2>Efektívne riešenia pre vašu značku</h2>
+    <h2>EfektÃ­vne rieÅ¡enia pre vaÅ¡u znaÄku</h2>
     <div class="card" style="padding:16px">
       
     <p>
-      Vonkajšia reklama od KPK Reklama spája veľký formát, vysoký dosah a čitateľný odkaz. 
-      Realizujeme billboardy, citylighty, backlighty, plachty a mesh aj prizmy – od návrhu cez výrobu až po montáž.
+      VonkajÅ¡ia reklama od KPK Reklama spÃ¡ja veÄ¾kÃ½ formÃ¡t, vysokÃ½ dosah a ÄitateÄ¾nÃ½ odkaz. 
+      Realizujeme billboardy, citylighty, backlighty, plachty a mesh aj prizmy â€“ od nÃ¡vrhu cez vÃ½robu aÅ¾ po montÃ¡Å¾.
     </p>
     <p>
-      Vlastná výroba v Košiciach a overené postupy nám umožňujú rýchle termíny a stabilnú kvalitu; 
-      kampane zabezpečujeme po celom Slovensku s dôrazom na bezpečnú inštaláciu a servis.
+      VlastnÃ¡ vÃ½roba v KoÅ¡iciach a overenÃ© postupy nÃ¡m umoÅ¾ÅˆujÃº rÃ½chle termÃ­ny a stabilnÃº kvalitu; 
+      kampane zabezpeÄujeme po celom Slovensku s dÃ´razom na bezpeÄnÃº inÅ¡talÃ¡ciu a servis.
     </p>
     </div>
   </div>
 </section>
 
 
-<!-- PODKATEGÓRIE (MINI-LANDING BLOKY) -->
+<!-- PODKATEGÃ“RIE (MINI-LANDING BLOKY) -->
 <section class="section">
   <div class="container">
-    <h2>Podkategórie</h2>
+    <h2>PodkategÃ³rie</h2>
 
     <?php
-    // Плейсхолдер на случай отсутствия img
+    // ÐŸÐ»ÐµÐ¹ÑÑ…Ð¾Ð»Ð´ÐµÑ€ Ð½Ð° ÑÐ»ÑƒÑ‡Ð°Ð¹ Ð¾Ñ‚ÑÑƒÑ‚ÑÑ‚Ð²Ð¸Ñ img
     $ph = get_stylesheet_directory_uri().'/assets/placeholder.jpg';
 
     $subs = [
       [
         'title'   => 'Billboardy (BBS)',
-        'desc'    => 'Najčastejšie 5,1×2,4 m a 4×3 m. Odporúčaný materiál: PVC plachta / blueback papier podľa dĺžky kampane.',
-        'bullets' => ['Vysoký zásah na hlavných ťahoch', 'Krátke a úderné posolstvo', 'Možnosť rýchlej výmeny vizuálu'],
+        'desc'    => 'NajÄastejÅ¡ie 5,1Ã—2,4 m a 4Ã—3 m. OdporÃºÄanÃ½ materiÃ¡l: PVC plachta / blueback papier podÄ¾a dÄºÅ¾ky kampane.',
+        'bullets' => ['VysokÃ½ zÃ¡sah na hlavnÃ½ch Å¥ahoch', 'KrÃ¡tke a ÃºdernÃ© posolstvo', 'MoÅ¾nosÅ¥ rÃ½chlej vÃ½meny vizuÃ¡lu'],
         'cta'     => '#kpk-quote',
         'img'     => 'https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0074-1508x900-1-e1669190918387.jpg',
       ],
       [
         'title'   => 'Backlighty',
-        'desc'    => 'Podsvietené nosiče pre nočnú viditeľnosť. Materiál: backlit film/plachta, vysoký jas a rovnomerné presvietenie.',
-        'bullets' => ['Silná vizibilita v noci', 'Kvalitné podsvietenie', 'Vhodné pre dlhšie kampane'],
+        'desc'    => 'PodsvietenÃ© nosiÄe pre noÄnÃº viditeÄ¾nosÅ¥. MateriÃ¡l: backlit film/plachta, vysokÃ½ jas a rovnomernÃ© presvietenie.',
+        'bullets' => ['SilnÃ¡ vizibilita v noci', 'KvalitnÃ© podsvietenie', 'VhodnÃ© pre dlhÅ¡ie kampane'],
         'cta'     => '#kpk-quote',
         'img'     => 'https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0588-1200x900-1-e1669190660337.jpg',
       ],
       [
         'title'   => 'Citylighty',
-        'desc'    => 'CLV/abribus v MHD zónach a peších koridoroch. Ideálne na kombináciu brandingu a akcií.',
-        'bullets' => ['Blízkosť k ľuďom', 'Čitateľné krátke správy', 'Možnosť podsvietenia'],
+        'desc'    => 'CLV/abribus v MHD zÃ³nach a peÅ¡Ã­ch koridoroch. IdeÃ¡lne na kombinÃ¡ciu brandingu a akciÃ­.',
+        'bullets' => ['BlÃ­zkosÅ¥ k Ä¾uÄom', 'ÄŒitateÄ¾nÃ© krÃ¡tke sprÃ¡vy', 'MoÅ¾nosÅ¥ podsvietenia'],
         'cta'     => '#kpk-quote',
         'img'     => 'https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0696-675x900-1-e1669190379525.jpg',
       ],
       [
         'title'   => 'Plachty / Mesh',
-        'desc'    => 'Veľké fasádne plochy. Mesh pre veterné miesta; PVC plachta pre plnú kryciu plochu.',
-        'bullets' => ['Veľký formát pre fasády', 'Oká a správna fixácia', 'Outdoorová životnosť'],
+        'desc'    => 'VeÄ¾kÃ© fasÃ¡dne plochy. Mesh pre veternÃ© miesta; PVC plachta pre plnÃº kryciu plochu.',
+        'bullets' => ['VeÄ¾kÃ½ formÃ¡t pre fasÃ¡dy', 'OkÃ¡ a sprÃ¡vna fixÃ¡cia', 'OutdoorovÃ¡ Å¾ivotnosÅ¥'],
         'cta'     => '#kpk-quote',
         'img'     => 'https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0505-1200x900-1-e1669197647355.jpg',
       ],
       [
         'title'   => 'Prizmy',
-        'desc'    => 'Trianglové (prizmatické) nosiče s rotáciou 3 vizuálov. Zvyšuje variabilitu kampane.',
-        'bullets' => ['Rotácia 3 správ', 'Dlhodobé kampane', 'Výborná frekvencia zásahu'],
+        'desc'    => 'TrianglovÃ© (prizmatickÃ©) nosiÄe s rotÃ¡ciou 3 vizuÃ¡lov. ZvyÅ¡uje variabilitu kampane.',
+        'bullets' => ['RotÃ¡cia 3 sprÃ¡v', 'DlhodobÃ© kampane', 'VÃ½bornÃ¡ frekvencia zÃ¡sahu'],
         'cta'     => '#kpk-quote',
         'img'     => 'https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_4028-1200x900-1-e1669194672101.jpg',
       ],
     ];
 
     foreach ($subs as $s):
-      // kpk_resolve_img($v) мы уже добавляли раньше; он понимает ID/URL/относительный путь
+      // kpk_resolve_img($v) Ð¼Ñ‹ ÑƒÐ¶Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐ»Ð¸ Ñ€Ð°Ð½ÑŒÑˆÐµ; Ð¾Ð½ Ð¿Ð¾Ð½Ð¸Ð¼Ð°ÐµÑ‚ ID/URL/Ð¾Ñ‚Ð½Ð¾ÑÐ¸Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¹ Ð¿ÑƒÑ‚ÑŒ
       $img = !empty($s['img']) ? kpk_resolve_img($s['img']) : $ph;
     ?>
       <div class="card u-mb-2">
@@ -141,7 +141,7 @@ get_header(); ?>
             <?php endif; ?>
 
             <div class="u-mt-2">
-              <a class="cta-btn" href="<?php echo esc_url($s['cta']); ?>">Zistiť cenu</a>
+              <a class="cta-btn" href="<?php echo esc_url($s['cta']); ?>">ZistiÅ¥ cenu</a>
             </div>
           </div>
         </div>
@@ -152,53 +152,53 @@ get_header(); ?>
 </section>
 
 
-<!-- MATERIÁLY A TECHNOLÓGIE (KOMPAKTNÁ TABUĽKA) -->
+<!-- MATERIÃLY A TECHNOLÃ“GIE (KOMPAKTNÃ TABUÄ½KA) -->
 <section class="section">
   <div class="container">
-    <h2>Materiály a technológie</h2>
+    <h2>MateriÃ¡ly a technolÃ³gie</h2>
     <table class="table">
       <thead>
         <tr>
-          <th>Typ nosiča</th>
-          <th>Odpor. materiál</th>
-          <th>Životnosť</th>
-          <th>Poznámka</th>
+          <th>Typ nosiÄa</th>
+          <th>Odpor. materiÃ¡l</th>
+          <th>Å½ivotnosÅ¥</th>
+          <th>PoznÃ¡mka</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Billboardy</td>
           <td>PVC plachta / Blueback</td>
-          <td>Krátka až stredná</td>
-          <td>Rýchla výmena vizuálu</td>
+          <td>KrÃ¡tka aÅ¾ strednÃ¡</td>
+          <td>RÃ½chla vÃ½mena vizuÃ¡lu</td>
         </tr>
         <tr>
           <td>Backlight</td>
           <td>Backlit film/plachta</td>
-          <td>Stredná až dlhá</td>
+          <td>StrednÃ¡ aÅ¾ dlhÃ¡</td>
           <td>Podsvietenie 24/7</td>
         </tr>
         <tr>
           <td>Citylight</td>
           <td>Backlit/Citylight papier</td>
-          <td>Stredná</td>
-          <td>MHD zóny, pešie trasy</td>
+          <td>StrednÃ¡</td>
+          <td>MHD zÃ³ny, peÅ¡ie trasy</td>
         </tr>
         <tr>
           <td>Plachta / Mesh</td>
-          <td>PVC / Mesh (veterné miesta)</td>
-          <td>Stredná až dlhá</td>
-          <td>Oká, správna fixácia</td>
+          <td>PVC / Mesh (veternÃ© miesta)</td>
+          <td>StrednÃ¡ aÅ¾ dlhÃ¡</td>
+          <td>OkÃ¡, sprÃ¡vna fixÃ¡cia</td>
         </tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<!-- GALÉRIA -->
+<!-- GALÃ‰RIA -->
 <section class="section" id="outdoor-gallery">
   <div class="container">
-    <h2>Ukážky outdoor realizácií</h2>
+    <h2>UkÃ¡Å¾ky outdoor realizÃ¡ciÃ­</h2>
 
     <div class="grid grid-3 tiles">
       <?php
@@ -216,7 +216,7 @@ get_header(); ?>
         $ph = get_stylesheet_directory_uri().'/assets/placeholder.jpg';
 
         foreach ($gallery as $i => $s):
-          // превью (thumb) и полноразмер (full) — если нет full, используем img
+          // Ð¿Ñ€ÐµÐ²ÑŒÑŽ (thumb) Ð¸ Ð¿Ð¾Ð»Ð½Ð¾Ñ€Ð°Ð·Ð¼ÐµÑ€ (full) â€” ÐµÑÐ»Ð¸ Ð½ÐµÑ‚ full, Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼ img
           $thumb = !empty($s['thumb']) ? kpk_resolve_img($s['thumb']) : kpk_resolve_img($s['img']);
           $full  = !empty($s['full'])  ? kpk_resolve_img($s['full'])  : kpk_resolve_img($s['img']);
           if (!$thumb) $thumb = $ph;
@@ -224,7 +224,7 @@ get_header(); ?>
       ?>
         <div class="card js-lb-item"
              role="button" tabindex="0"
-             aria-label="Zväčšiť: <?php echo esc_attr($s['title']); ?>"
+             aria-label="ZvÃ¤ÄÅ¡iÅ¥: <?php echo esc_attr($s['title']); ?>"
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
@@ -245,12 +245,12 @@ get_header(); ?>
     <div class="grid grid-2">
       <?php
       $faq = [
-        ['Ako vybrať správny formát?', 'Závisí od lokality a vzdialenosti pozorovania. Najčastejšie používame 5,1×2,4 m alebo 4×3 m pre BBS, citylight pre peších.'],
-        ['Kedy zvoliť mesh namiesto plachty?', 'V exponovaných veterných miestach alebo na veľkých fasádach — mesh zníži nápor vetra.'],
-        ['Ako dlho trvá výroba?', 'Štandardne 3–7 pracovných dní podľa rozsahu a dostupnosti plôch.'],
-        ['Potrebujem aj montáž?', 'Áno, zabezpečujeme kompletnú montáž a servis po celej SR.'],
-        ['Aké podklady sú potrebné?', 'Grafika v tlačovej kvalite (PDF/TIFF), s nastaveným bleedom. S návrhom radi pomôžeme.'],
-        ['Je možná výmena kampane?', 'Áno, pripravíme viac vizuálov a vieme ich rýchlo prelepiť alebo vymeniť.'],
+        ['Ako vybraÅ¥ sprÃ¡vny formÃ¡t?', 'ZÃ¡visÃ­ od lokality a vzdialenosti pozorovania. NajÄastejÅ¡ie pouÅ¾Ã­vame 5,1Ã—2,4 m alebo 4Ã—3 m pre BBS, citylight pre peÅ¡Ã­ch.'],
+        ['Kedy zvoliÅ¥ mesh namiesto plachty?', 'V exponovanÃ½ch veternÃ½ch miestach alebo na veÄ¾kÃ½ch fasÃ¡dach â€” mesh znÃ­Å¾i nÃ¡por vetra.'],
+        ['Ako dlho trvÃ¡ vÃ½roba?', 'Å tandardne 3â€“7 pracovnÃ½ch dnÃ­ podÄ¾a rozsahu a dostupnosti plÃ´ch.'],
+        ['Potrebujem aj montÃ¡Å¾?', 'Ãno, zabezpeÄujeme kompletnÃº montÃ¡Å¾ a servis po celej SR.'],
+        ['AkÃ© podklady sÃº potrebnÃ©?', 'Grafika v tlaÄovej kvalite (PDF/TIFF), s nastavenÃ½m bleedom. S nÃ¡vrhom radi pomÃ´Å¾eme.'],
+        ['Je moÅ¾nÃ¡ vÃ½mena kampane?', 'Ãno, pripravÃ­me viac vizuÃ¡lov a vieme ich rÃ½chlo prelepiÅ¥ alebo vymeniÅ¥.'],
       ];
       foreach($faq as $f): ?>
         <div class="card">
@@ -264,18 +264,18 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- FINÁLNY CTA -->
+<!-- FINÃLNY CTA -->
 <?php kpk_form_notice(); ?>
 <section id="kpk-quote" class="section bg-muted">
   <div class="container grid grid-2">
     <div class="card"  style="padding:16px">
           
-          <h2>Požiadať o cenovú ponuku</h2>
-          <p class="meta">Zvyčajne odpovieme do 24 hodín. Navrhneme formáty, odporučíme lokality a pripravíme nezáväznú ponuku.</p>
+          <h2>PoÅ¾iadaÅ¥ o cenovÃº ponuku</h2>
+          <p class="meta">ZvyÄajne odpovieme do 24 hodÃ­n. Navrhneme formÃ¡ty, odporuÄÃ­me lokality a pripravÃ­me nezÃ¡vÃ¤znÃº ponuku.</p>
           <ul class="meta u-mt-1">
-            <li>Formát a počet plôch</li>
+            <li>FormÃ¡t a poÄet plÃ´ch</li>
             <li>Lokalita / mesto</li>
-            <li>Termín a dĺžka kampane</li>
+            <li>TermÃ­n a dÄºÅ¾ka kampane</li>
           </ul>
           </div>
 
@@ -284,19 +284,19 @@ get_header(); ?>
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>
-          <input type="tel" name="phone" placeholder="Telefón">
+          <input type="tel" name="phone" placeholder="TelefÃ³n">
           <select name="topic">
-            <option value="">Téma dopytu</option>
+            <option value="">TÃ©ma dopytu</option>
             <option>Billboardy</option>
             <option>Backlight</option>
             <option>Citylight</option>
             <option>Plachta / Mesh</option>
             <option>Prizmy</option>
-            <option>Iné</option>
+            <option>InÃ©</option>
           </select>
-          <textarea name="message" rows="4" placeholder="Rozmery, lokality, termín, rozpočet (ak je)"></textarea>
+          <textarea name="message" rows="4" placeholder="Rozmery, lokality, termÃ­n, rozpoÄet (ak je)"></textarea>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
-          <button type="submit">Získať ponuku</button>
+          <button type="submit">ZÃ­skaÅ¥ ponuku</button>
         </form>
       
   </div>

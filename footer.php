@@ -5,33 +5,33 @@
     <div class="footer-col">
       <h3><?php _e('Produkty','kpk'); ?></h3>
       <ul class="footer-links">
-        <li><a href="<?php echo esc_url(home_url('/vonkajsia-reklama/')); ?>">Vonkajšia reklama</a></li>
-        <li><a href="<?php echo esc_url(home_url('/samolepiace-folie/')); ?>">Samolepiace fólie</a></li>
-        <li><a href="<?php echo esc_url(home_url('/kartonove-stojany/')); ?>">Kartónové stojany</a></li>
-        <li><a href="<?php echo esc_url(home_url('/vystavne-systemy/')); ?>">Výstavné systémy</a></li>
-        <li><a href="<?php echo esc_url(home_url('/maloplosna-tlac/')); ?>">Maloplošná tlač</a></li>
+        <li><a href="<?php echo esc_url(home_url('/vonkajsia-reklama/')); ?>">VonkajÅ¡ia reklama</a></li>
+        <li><a href="<?php echo esc_url(home_url('/samolepiace-folie/')); ?>">Samolepiace fÃ³lie</a></li>
+        <li><a href="<?php echo esc_url(home_url('/kartonove-stojany/')); ?>">KartÃ³novÃ© stojany</a></li>
+        <li><a href="<?php echo esc_url(home_url('/vystavne-systemy/')); ?>">VÃ½stavnÃ© systÃ©my</a></li>
+        <li><a href="<?php echo esc_url(home_url('/maloplosna-tlac/')); ?>">MaloploÅ¡nÃ¡ tlaÄ</a></li>
         <li><a href="<?php echo esc_url(home_url('/polepy-vozidiel/')); ?>">Polepy vozidiel</a></li>
-        <li><a href="<?php echo esc_url(home_url('/napinacie-systemy/')); ?>">Napínacie systémy</a></li>
-        <li><a href="<?php echo esc_url(home_url('/technologie/')); ?>">Technológie</a></li>
+        <li><a href="<?php echo esc_url(home_url('/napinacie-systemy/')); ?>">NapÃ­nacie systÃ©my</a></li>
+        <li><a href="<?php echo esc_url(home_url('/technologie/')); ?>">TechnolÃ³gie</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3><?php _e('Služby','kpk'); ?></h3>
+      <h3><?php _e('SluÅ¾by','kpk'); ?></h3>
       <ul class="footer-links">
-        <li><a href="<?php echo esc_url(home_url('/sluzby/')); ?>">Návrh a poradenstvo</a></li>
-        <li><a href="<?php echo esc_url(home_url('/sluzby/')); ?>">Inštalácia a servis</a></li>
+        <li><a href="<?php echo esc_url(home_url('/sluzby/')); ?>">NÃ¡vrh a poradenstvo</a></li>
+        <li><a href="<?php echo esc_url(home_url('/sluzby/')); ?>">InÅ¡talÃ¡cia a servis</a></li>
         <li><a href="<?php echo esc_url(home_url('/sluzby/')); ?>">Logistika & rozvoz</a></li>
         <li><a href="<?php echo esc_url(home_url('/sluzby/')); ?>">Plnenie POS</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3><?php _e('Technológie & certifikáty','kpk'); ?></h3>
+      <h3><?php _e('TechnolÃ³gie & certifikÃ¡ty','kpk'); ?></h3>
       <p class="meta">
         <?php
           echo esc_html(
-            get_theme_mod('kpk_tech_text', __('Roland UV · Mimaki · Summa · Laser · Fréza · Laminácia','kpk'))
+            get_theme_mod('kpk_tech_text', __('Roland UV Â· Mimaki Â· Summa Â· Laser Â· FrÃ©za Â· LaminÃ¡cia','kpk'))
           );
         ?>
       </p>
@@ -42,7 +42,7 @@
             $icon = get_theme_mod("kpk_tech_icon_$i", '');
             if (!$icon) continue;
             $has_icons = true; ?>
-            <img src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr__('Technológia','kpk').' '.$i; ?>" loading="lazy" width="120" height="40">
+            <img src="<?php echo esc_url($icon); ?>" alt="<?php echo esc_attr__('TechnolÃ³gia','kpk').' '.$i; ?>" loading="lazy" width="120" height="40">
         <?php endfor; ?>
         <?php if(!$has_icons): ?>
           <div class="figure" style="width:120px;height:60px"></div>
@@ -55,7 +55,7 @@
     <div class="footer-col">
       <h3><?php _e('Kontakt','kpk'); ?></h3>
       <?php
-        $addr  = get_theme_mod('kpk_address', "Košice, Slovensko");
+        $addr  = get_theme_mod('kpk_address', "KoÅ¡ice, Slovensko");
         $phone = get_theme_mod('kpk_phone', '+421 000 000 000');
         $email = get_theme_mod('kpk_email', get_option('admin_email'));
         $fb = get_theme_mod('kpk_fb','#'); $ig = get_theme_mod('kpk_ig','#'); $li = get_theme_mod('kpk_li','#');
@@ -67,14 +67,14 @@
       </p>
       <p class="meta">
         <?php if($fb && $fb!=='#'): ?><a href="<?php echo esc_url($fb); ?>" target="_blank" rel="noopener">Facebook</a><?php endif; ?>
-        <?php if($ig && $ig!=='#'): ?> · <a href="<?php echo esc_url($ig); ?>" target="_blank" rel="noopener">Instagram</a><?php endif; ?>
-        <?php if($li && $li!=='#'): ?> · <a href="<?php echo esc_url($li); ?>" target="_blank" rel="noopener">LinkedIn</a><?php endif; ?>
+        <?php if($ig && $ig!=='#'): ?> Â· <a href="<?php echo esc_url($ig); ?>" target="_blank" rel="noopener">Instagram</a><?php endif; ?>
+        <?php if($li && $li!=='#'): ?> Â· <a href="<?php echo esc_url($li); ?>" target="_blank" rel="noopener">LinkedIn</a><?php endif; ?>
       </p>
-      <p><a href="<?php echo esc_url(home_url('/kontakt/')); ?>" class="cta-btn cta-btn--invert"><?php _e('Napísať správu','kpk'); ?></a></p>
+      <p><a href="<?php echo esc_url(home_url('/kontakt/')); ?>" class="cta-btn cta-btn--invert"><?php _e('NapÃ­saÅ¥ sprÃ¡vu','kpk'); ?></a></p>
     </div>
   </div>
 
-  <div class="container footer-copy">© <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Všetky práva vyhradené.','kpk'); ?></div>
+  <div class="container footer-copy">Â© <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('VÅ¡etky prÃ¡va vyhradenÃ©.','kpk'); ?></div>
 </footer>
 
 <script>
@@ -101,7 +101,7 @@
 
       const btn = form.querySelector('button[type="submit"]');
       const btnText = btn ? btn.textContent : '';
-      if(btn){ btn.disabled = true; btn.textContent = 'Odosielam…'; }
+      if(btn){ btn.disabled = true; btn.textContent = 'Odosielamâ€¦'; }
 
       const data = new FormData(form);
       data.append('kpk_ajax','1');
@@ -113,11 +113,11 @@
       })
       .then(r => r.ok ? r.json() : Promise.reject())
       .then(res => {
-        showAlert(form, (res && res.data && res.data.message) ? res.data.message : 'Ďakujeme! Vaša správa bola odoslaná.');
+        showAlert(form, (res && res.data && res.data.message) ? res.data.message : 'ÄŽakujeme! VaÅ¡a sprÃ¡va bola odoslanÃ¡.');
         try { form.reset(); } catch(e){}
       })
       .catch(() => {
-        showAlert(form, 'Ups — nepodarilo sa odoslať. Skúste znova alebo nás kontaktujte telefonicky.', true);
+        showAlert(form, 'Ups â€” nepodarilo sa odoslaÅ¥. SkÃºste znova alebo nÃ¡s kontaktujte telefonicky.', true);
       })
       .finally(() => {
         if(btn){ btn.disabled = false; btn.textContent = btnText; }
@@ -183,7 +183,7 @@
     root.addEventListener('focusout',  restart);
 
     root.addEventListener('pointerdown', e=>{
-      if (e.target.closest('.kpk-nav, .kpk-dots')) return; // важно!
+      if (e.target.closest('.kpk-nav, .kpk-dots')) return; // Ð²Ð°Ð¶Ð½Ð¾!
       dragging = true; startX = e.clientX;
     });
     root.addEventListener('pointermove', e=>{
@@ -237,11 +237,11 @@
     lb.innerHTML = `
       <div class="lb__backdrop" data-act="close"></div>
       <div class="lb__stage">
-        <button class="lb__btn lb__prev" data-act="prev" aria-label="Predošlý">‹</button>
+        <button class="lb__btn lb__prev" data-act="prev" aria-label="PredoÅ¡lÃ½">â€¹</button>
         <img class="lb__img" alt="">
-        <button class="lb__btn lb__next" data-act="next" aria-label="Ďalší">›</button>
+        <button class="lb__btn lb__next" data-act="next" aria-label="ÄŽalÅ¡Ã­">â€º</button>
         <div class="lb__caption"></div>
-        <button class="lb__btn lb__close" data-act="close" aria-label="Zavrieť">×</button>
+        <button class="lb__btn lb__close" data-act="close" aria-label="ZavrieÅ¥">Ã—</button>
         <div class="lb__dots" aria-hidden="true"></div>
       </div>`;
     document.body.appendChild(lb);
@@ -257,7 +257,7 @@
     const dots = items.map((_, idx) => {
       const b = document.createElement('button');
       b.type = 'button';
-      b.setAttribute('aria-label', `Zobraziť obrázok ${idx+1}`);
+      b.setAttribute('aria-label', `ZobraziÅ¥ obrÃ¡zok ${idx+1}`);
       b.addEventListener('click', () => go(idx));
       dotsWrap.appendChild(b);
       return b;

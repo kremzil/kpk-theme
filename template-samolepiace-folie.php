@@ -1,17 +1,17 @@
 <?php
 /**
- * Template Name: Samolepiace fólie (Hub)
- * Description: Landing-hub pre samolepiace fólie: výhody, podkategórie, mini-gid výberu, technológie, galéria, FAQ, CTA.
+ * Template Name: Samolepiace fÃ³lie (Hub)
+ * Description: Landing-hub pre samolepiace fÃ³lie: vÃ½hody, podkategÃ³rie, mini-gid vÃ½beru, technolÃ³gie, galÃ©ria, FAQ, CTA.
  */
 get_header(); ?>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <h1>Samolepiace fólie pre výklady, autá aj interiér</h1>
-    <p class="meta-hero">Rýchla inštalácia, flexibilné použitie a výborný pomer ceny a výkonu. Od návrhu po aplikáciu po celej SR.</p>
+    <h1>Samolepiace fÃ³lie pre vÃ½klady, autÃ¡ aj interiÃ©r</h1>
+    <p class="meta-hero">RÃ½chla inÅ¡talÃ¡cia, flexibilnÃ© pouÅ¾itie a vÃ½bornÃ½ pomer ceny a vÃ½konu. Od nÃ¡vrhu po aplikÃ¡ciu po celej SR.</p>
     <div class="badges" style="margin-top:12px">
-        <a class="hero-btn" href="#kpk-quote">Cenová ponuka</a>
+        <a class="hero-btn" href="#kpk-quote">CenovÃ¡ ponuka</a>
     </div>
   </div>
 </section>
@@ -19,30 +19,30 @@ get_header(); ?>
 <?php kpk_breadcrumbs(); ?>
 
 
-<!-- VÝHODY -->
+<!-- VÃHODY -->
 <section class="section">
   <div class="container">
-    <h2>Výhody fólií</h2>
+    <h2>VÃ½hody fÃ³liÃ­</h2>
     <div class="grid grid-3">
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/vyklady.webp')"></div>
         <div style="padding:16px">
           <h3>Flexibilita</h3>
-          <p class="meta">Rozsiahle možnosti pre výklady, steny, podlahy aj vozidlá.</p>
+          <p class="meta">Rozsiahle moÅ¾nosti pre vÃ½klady, steny, podlahy aj vozidlÃ¡.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/aplikacia.webp')"></div>
         <div style="padding:16px">
-          <h3>Rýchlosť aplikácie</h3>
-          <p class="meta">Čistá montáž s minimálnym odstávkovým časom.</p>
+          <h3>RÃ½chlosÅ¥ aplikÃ¡cie</h3>
+          <p class="meta">ÄŒistÃ¡ montÃ¡Å¾ s minimÃ¡lnym odstÃ¡vkovÃ½m Äasom.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/cena.webp')"></div>
         <div style="padding:16px">
           <h3>Cena</h3>
-          <p class="meta">Efektívne riešenie pre krátkodobé aj dlhodobé kampane.</p>
+          <p class="meta">EfektÃ­vne rieÅ¡enie pre krÃ¡tkodobÃ© aj dlhodobÃ© kampane.</p>
         </div>
       </div>
     </div>
@@ -52,71 +52,71 @@ get_header(); ?>
 <!-- SEO INTRO (short, no links) -->
 <section class="section">
   <div class="container">
-    <h2>Profesionálne samolepiace fólie pre rôzne povrchy</h2>
+    <h2>ProfesionÃ¡lne samolepiace fÃ³lie pre rÃ´zne povrchy</h2>
     <div class="card" style="padding:16px">
       
     <p>
-      Samolepiace fólie sú rýchle a flexibilné riešenie pre výklady, steny, podlahy aj vozidlá. 
-      V KPK Reklama zabezpečujeme kompletný proces od návrhu cez tlač a rezanie až po profesionálnu inštaláciu – 
-      s dôrazom na čistotu montáže, trvácnosť a konzistentnú kvalitu.
+      Samolepiace fÃ³lie sÃº rÃ½chle a flexibilnÃ© rieÅ¡enie pre vÃ½klady, steny, podlahy aj vozidlÃ¡. 
+      V KPK Reklama zabezpeÄujeme kompletnÃ½ proces od nÃ¡vrhu cez tlaÄ a rezanie aÅ¾ po profesionÃ¡lnu inÅ¡talÃ¡ciu â€“ 
+      s dÃ´razom na Äistotu montÃ¡Å¾e, trvÃ¡cnosÅ¥ a konzistentnÃº kvalitu.
     </p>
     <p>
-      Podľa použitia volíme monomerickú (krátkodobo), polymerickú (strednodobo) alebo liatu fóliu (dlhodobo, 3D povrchy),
-      prípadne perforovanú One Way Vision na sklo. Laminácia – matná, lesklá alebo anti-sklz pre podlahy –
-      zvyšuje odolnosť voči UV žiareniu a mechanickému poškodeniu. Montujeme po celej SR.
+      PodÄ¾a pouÅ¾itia volÃ­me monomerickÃº (krÃ¡tkodobo), polymerickÃº (strednodobo) alebo liatu fÃ³liu (dlhodobo, 3D povrchy),
+      prÃ­padne perforovanÃº One Way Vision na sklo. LaminÃ¡cia â€“ matnÃ¡, lesklÃ¡ alebo anti-sklz pre podlahy â€“
+      zvyÅ¡uje odolnosÅ¥ voÄi UV Å¾iareniu a mechanickÃ©mu poÅ¡kodeniu. Montujeme po celej SR.
     </p>
     </div>
   </div>
 </section>
 
-<!-- PODKATEGÓRIE -->
+<!-- PODKATEGÃ“RIE -->
 <section class="section">
   <div class="container">
-    <h2>Podkategórie</h2>
+    <h2>PodkategÃ³rie</h2>
 
-    <!-- Výklady a pevné podklady -->
+    <!-- VÃ½klady a pevnÃ© podklady -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/20190402_144151-1851x900-1-e1669199005437.jpg')"></div>
         <div style="padding:16px">
-          <h3>Výklady a pevné podklady</h3>
-          <p class="meta">Monomerická (krátkodobé), polymerická (stredne dlhé), liata (dlhodobé a 3D), One Way Vision (perforovaná fólia na sklo). Odporúčame lamináciu pre dlhšiu životnosť a UV ochranu.</p>
+          <h3>VÃ½klady a pevnÃ© podklady</h3>
+          <p class="meta">MonomerickÃ¡ (krÃ¡tkodobÃ©), polymerickÃ¡ (stredne dlhÃ©), liata (dlhodobÃ© a 3D), One Way Vision (perforovanÃ¡ fÃ³lia na sklo). OdporÃºÄame laminÃ¡ciu pre dlhÅ¡iu Å¾ivotnosÅ¥ a UV ochranu.</p>
           <ul class="meta u-mt-1">
-            <li>Sklo, dibond, PVC, plech, lakované povrchy</li>
-            <li>Možnosť pískovaného efektu / privacy fólií</li>
-            <li>Matná / lesklá laminácia podľa prostredia</li>
+            <li>Sklo, dibond, PVC, plech, lakovanÃ© povrchy</li>
+            <li>MoÅ¾nosÅ¥ pÃ­skovanÃ©ho efektu / privacy fÃ³liÃ­</li>
+            <li>MatnÃ¡ / lesklÃ¡ laminÃ¡cia podÄ¾a prostredia</li>
           </ul>
-          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">Zistiť cenu</a></div>
+          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">ZistiÅ¥ cenu</a></div>
         </div>
       </div>
     </div>
 
-    <!-- Polepy dopravných prostriedkov -->
+    <!-- Polepy dopravnÃ½ch prostriedkov -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0626-e1669200389898.jpg')"></div>
         <div style="padding:16px">
-          <h3>Polepy dopravných prostriedkov</h3>
-          <p class="meta">Čiastočný (partial) alebo celoplošný (full wrap). Liata fólia s lamináciou pre tvarované diely a dlhú životnosť. Pre detailný prehľad prejdite na dedikovaný landing.</p>
-          <p class="meta u-mt-1"><a href="<?php echo esc_url( home_url('/polepy-vozidiel/') ); ?>">→ Polepy vozidiel</a></p>
-          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">Zistiť cenu</a></div>
+          <h3>Polepy dopravnÃ½ch prostriedkov</h3>
+          <p class="meta">ÄŒiastoÄnÃ½ (partial) alebo celoploÅ¡nÃ½ (full wrap). Liata fÃ³lia s laminÃ¡ciou pre tvarovanÃ© diely a dlhÃº Å¾ivotnosÅ¥. Pre detailnÃ½ prehÄ¾ad prejdite na dedikovanÃ½ landing.</p>
+          <p class="meta u-mt-1"><a href="<?php echo esc_url( home_url('/polepy-vozidiel/') ); ?>">â†’ Polepy vozidiel</a></p>
+          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">ZistiÅ¥ cenu</a></div>
         </div>
       </div>
     </div>
 
-    <!-- Podlahová grafika -->
+    <!-- PodlahovÃ¡ grafika -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-14.30.55-e1669200679605.jpg')"></div>
         <div style="padding:16px">
-          <h3>Podlahová grafika</h3>
-          <p class="meta">Na hladké aj mierne štruktúrované povrchy. Antisklzné laminácie (napr. R9/R10) pre bezpečnosť v retaili a eventoch.</p>
+          <h3>PodlahovÃ¡ grafika</h3>
+          <p class="meta">Na hladkÃ© aj mierne Å¡truktÃºrovanÃ© povrchy. AntisklznÃ© laminÃ¡cie (napr. R9/R10) pre bezpeÄnosÅ¥ v retaili a eventoch.</p>
           <ul class="meta u-mt-1">
-            <li>Rýchla výmena kampaní</li>
-            <li>Odolnosť voči ošľapu a čisteniu</li>
-            <li>Vnútorné aj krátkodobé vonkajšie použitie</li>
+            <li>RÃ½chla vÃ½mena kampanÃ­</li>
+            <li>OdolnosÅ¥ voÄi oÅ¡Ä¾apu a Äisteniu</li>
+            <li>VnÃºtornÃ© aj krÃ¡tkodobÃ© vonkajÅ¡ie pouÅ¾itie</li>
           </ul>
-          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">Zistiť cenu</a></div>
+          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">ZistiÅ¥ cenu</a></div>
         </div>
       </div>
     </div>
@@ -127,13 +127,13 @@ get_header(); ?>
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_20180322_145954-1200x900-1-copy.png')"></div>
         <div style="padding:16px">
           <h3>Tapety / WallWrap</h3>
-          <p class="meta">Dekoratívne tapety a fólie pre steny, recepcie, meeting rooms. Textúrované aj hladké materiály (napr. Gecco, Arlon a i.).</p>
+          <p class="meta">DekoratÃ­vne tapety a fÃ³lie pre steny, recepcie, meeting rooms. TextÃºrovanÃ© aj hladkÃ© materiÃ¡ly (napr. Gecco, Arlon a i.).</p>
           <ul class="meta u-mt-1">
-            <li>Vizuálne zónovanie a brandovanie interiéru</li>
-            <li>Jednoduchá údržba, bezpachové atramenty</li>
-            <li>Odolnosť proti poškriabaniu s lamináciou</li>
+            <li>VizuÃ¡lne zÃ³novanie a brandovanie interiÃ©ru</li>
+            <li>JednoduchÃ¡ ÃºdrÅ¾ba, bezpachovÃ© atramenty</li>
+            <li>OdolnosÅ¥ proti poÅ¡kriabaniu s laminÃ¡ciou</li>
           </ul>
-          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">Zistiť cenu</a></div>
+          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">ZistiÅ¥ cenu</a></div>
         </div>
       </div>
     </div>
@@ -144,108 +144,108 @@ get_header(); ?>
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2023/06/SpartanRace.jpg')"></div>
         <div style="padding:16px">
           <h3>Polep na auto</h3>
-          <p class="meta">Liata fólia, Polymerická fólia, Monomerická fólia, Liata laminovacia fólia.</p>
+          <p class="meta">Liata fÃ³lia, PolymerickÃ¡ fÃ³lia, MonomerickÃ¡ fÃ³lia, Liata laminovacia fÃ³lia.</p>
           <ul class="meta u-mt-1">
             <li>Branding</li>
             <li>Ochrana laku</li>
-            <li>Certifikované materiály</li>
+            <li>CertifikovanÃ© materiÃ¡ly</li>
           </ul>
-          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">Zistiť cenu</a></div>
+          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">ZistiÅ¥ cenu</a></div>
         </div>
       </div>
     </div>
 
-    <!-- Zástavky / MHD -->
+    <!-- ZÃ¡stavky / MHD -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/POLEP-ZASTAVOK-KPKReklama.sk-fabrika-na-reklamu-03-copy.png')"></div>
         <div style="padding:16px">
-          <h3>Zástavky / MHD</h3>
-          <p class="meta">Výlep a výmena vizuálov v zástavkách a MHD zónach. Kampaň často vyžaduje koordináciu s mestom/prevádzkovateľom — poradíme s podmienkami a termínmi.</p>
-          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">Zistiť cenu</a></div>
+          <h3>ZÃ¡stavky / MHD</h3>
+          <p class="meta">VÃ½lep a vÃ½mena vizuÃ¡lov v zÃ¡stavkÃ¡ch a MHD zÃ³nach. KampaÅˆ Äasto vyÅ¾aduje koordinÃ¡ciu s mestom/prevÃ¡dzkovateÄ¾om â€” poradÃ­me s podmienkami a termÃ­nmi.</p>
+          <div class="u-mt-2"><a class="cta-btn" href="#kpk-quote">ZistiÅ¥ cenu</a></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SPRÁVNA VOĽBA FÓLIE (MINI-GUIDE) -->
+<!-- SPRÃVNA VOÄ½BA FÃ“LIE (MINI-GUIDE) -->
 <section class="section">
   <div class="container">
-    <h2>Správna voľba fólie</h2>
+    <h2>SprÃ¡vna voÄ¾ba fÃ³lie</h2>
     <table class="table">
       <thead>
         <tr>
-          <th>Typ fólie</th>
-          <th>Použitie</th>
-          <th>Životnosť</th>
-          <th>Poznámka</th>
+          <th>Typ fÃ³lie</th>
+          <th>PouÅ¾itie</th>
+          <th>Å½ivotnosÅ¥</th>
+          <th>PoznÃ¡mka</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Monomerická</td>
-          <td>Krátkodobé kampane, interiér</td>
-          <td>Krátka</td>
-          <td>Cenovo najdostupnejšia</td>
+          <td>MonomerickÃ¡</td>
+          <td>KrÃ¡tkodobÃ© kampane, interiÃ©r</td>
+          <td>KrÃ¡tka</td>
+          <td>Cenovo najdostupnejÅ¡ia</td>
         </tr>
         <tr>
-          <td>Polymerická</td>
-          <td>Strednodobé kampane, exteriér</td>
-          <td>Stredná</td>
-          <td>Lepšia rozmerová stabilita</td>
+          <td>PolymerickÃ¡</td>
+          <td>StrednodobÃ© kampane, exteriÃ©r</td>
+          <td>StrednÃ¡</td>
+          <td>LepÅ¡ia rozmerovÃ¡ stabilita</td>
         </tr>
         <tr>
           <td>Liata</td>
-          <td>3D povrchy, vozidlá, dlho</td>
-          <td>Dlhá</td>
-          <td>Vyššia tvárnosť a priľnavosť</td>
+          <td>3D povrchy, vozidlÃ¡, dlho</td>
+          <td>DlhÃ¡</td>
+          <td>VyÅ¡Å¡ia tvÃ¡rnosÅ¥ a priÄ¾navosÅ¥</td>
         </tr>
         <tr>
           <td>One Way Vision</td>
-          <td>Výklady / sklo (perforované)</td>
-          <td>Stredná</td>
-          <td>Viditeľnosť von, grafika zvonka</td>
+          <td>VÃ½klady / sklo (perforovanÃ©)</td>
+          <td>StrednÃ¡</td>
+          <td>ViditeÄ¾nosÅ¥ von, grafika zvonka</td>
         </tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<!-- TECHNOLÓGIE A POVRCHOVÁ ÚPRAVA -->
+<!-- TECHNOLÃ“GIE A POVRCHOVÃ ÃšPRAVA -->
 <section id="technologie" class="section">
   <div class="container">
-    <h2>Technológie a povrchová úprava</h2>
+    <h2>TechnolÃ³gie a povrchovÃ¡ Ãºprava</h2>
     <div class="grid grid-3">
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/ploter.webp')"></div>
         <div style="padding:16px">
-          <h3>Tlač a rezanie</h3>
-          <p class="meta">Ekosolvent/UV tlač, presné rezanie na ploteri, farebná zhoda a ostré detaily.</p>
+          <h3>TlaÄ a rezanie</h3>
+          <p class="meta">Ekosolvent/UV tlaÄ, presnÃ© rezanie na ploteri, farebnÃ¡ zhoda a ostrÃ© detaily.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/laminacia.webp')"></div>
         <div style="padding:16px">
-          <h3>Laminácia</h3>
-          <p class="meta">Mat/lesk, anti-sklz pre podlahy, UV ochrana a jednoduchšia údržba.</p>
+          <h3>LaminÃ¡cia</h3>
+          <p class="meta">Mat/lesk, anti-sklz pre podlahy, UV ochrana a jednoduchÅ¡ia ÃºdrÅ¾ba.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/montaz.webp')"></div>
         <div style="padding:16px">
-          <h3>Inštalácia</h3>
-          <p class="meta">Certifikované postupy, príprava podkladu a montáž po celej SR.</p>
+          <h3>InÅ¡talÃ¡cia</h3>
+          <p class="meta">CertifikovanÃ© postupy, prÃ­prava podkladu a montÃ¡Å¾ po celej SR.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- GALÉRIA -->
+<!-- GALÃ‰RIA -->
 <section class="section" id="folie-gallery">
   <div class="container">
-    <h2>Ukážky realizácií fólií</h2>
+    <h2>UkÃ¡Å¾ky realizÃ¡ciÃ­ fÃ³liÃ­</h2>
 
     <div class="grid grid-3 tiles">
       <?php
@@ -263,7 +263,7 @@ get_header(); ?>
         $ph = get_stylesheet_directory_uri().'/assets/placeholder.jpg';
 
         foreach ($gallery as $i => $s):
-          // превью (thumb) и полноразмер (full) — если нет full, используем img
+          // Ð¿Ñ€ÐµÐ²ÑŒÑŽ (thumb) Ð¸ Ð¿Ð¾Ð»Ð½Ð¾Ñ€Ð°Ð·Ð¼ÐµÑ€ (full) â€” ÐµÑÐ»Ð¸ Ð½ÐµÑ‚ full, Ð¸ÑÐ¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼ img
           $thumb = !empty($s['thumb']) ? kpk_resolve_img($s['thumb']) : kpk_resolve_img($s['img']);
           $full  = !empty($s['full'])  ? kpk_resolve_img($s['full'])  : kpk_resolve_img($s['img']);
           if (!$thumb) $thumb = $ph;
@@ -271,13 +271,13 @@ get_header(); ?>
       ?>
         <div class="card js-lb-item"
              role="button" tabindex="0"
-             aria-label="Zväčšiť: <?php echo esc_attr($s['title']); ?>"
+             aria-label="ZvÃ¤ÄÅ¡iÅ¥: <?php echo esc_attr($s['title']); ?>"
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
           <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
           <div style="padding:12px">
-            <h3 class="meta">Fólie – projekt <?php echo esc_html($s['title']); ?></h3>
+            <h3 class="meta">FÃ³lie â€“ projekt <?php echo esc_html($s['title']); ?></h3>
           </div>
         </div>
       <?php endforeach; ?>
@@ -292,12 +292,12 @@ get_header(); ?>
     <div class="grid grid-2">
       <?php
       $faq = [
-        ['Ako dlho fólia vydrží?', 'Podľa typu: monomerická (krátkodobo), polymerická (stredne), liata (dlhodobo) – pri správnej laminácii a údržbe.'],
-        ['Je možné fóliu odstrániť bez poškodenia?', 'Áno, používame vhodné materiály a techniky; pri starších fóliách rátame s dočistením lepidla.'],
-        ['Ako sa fólia udržiava?', 'Umývanie jemnými prostriedkami, bez agresívnych rozpúšťadiel a tvrdých kefiek.'],
-        ['Prečo sa zdvíhajú okraje?', 'Nedostatočná príprava podkladu alebo nevhodný typ fólie/laminácie. Kontrolujeme pred montážou.'],
-        ['Treba súhlas na zástavkách/MHD?', 'Zvyčajne áno – pomôžeme so súhlasmi a termínmi výmeny.'],
-        ['Aké sú štandardné termíny?', 'Návrh a výroba 2–5 pracovných dní podľa rozsahu, inštalácia podľa dohody.'],
+        ['Ako dlho fÃ³lia vydrÅ¾Ã­?', 'PodÄ¾a typu: monomerickÃ¡ (krÃ¡tkodobo), polymerickÃ¡ (stredne), liata (dlhodobo) â€“ pri sprÃ¡vnej laminÃ¡cii a ÃºdrÅ¾be.'],
+        ['Je moÅ¾nÃ© fÃ³liu odstrÃ¡niÅ¥ bez poÅ¡kodenia?', 'Ãno, pouÅ¾Ã­vame vhodnÃ© materiÃ¡ly a techniky; pri starÅ¡Ã­ch fÃ³liÃ¡ch rÃ¡tame s doÄistenÃ­m lepidla.'],
+        ['Ako sa fÃ³lia udrÅ¾iava?', 'UmÃ½vanie jemnÃ½mi prostriedkami, bez agresÃ­vnych rozpÃºÅ¡Å¥adiel a tvrdÃ½ch kefiek.'],
+        ['PreÄo sa zdvÃ­hajÃº okraje?', 'NedostatoÄnÃ¡ prÃ­prava podkladu alebo nevhodnÃ½ typ fÃ³lie/laminÃ¡cie. Kontrolujeme pred montÃ¡Å¾ou.'],
+        ['Treba sÃºhlas na zÃ¡stavkÃ¡ch/MHD?', 'ZvyÄajne Ã¡no â€“ pomÃ´Å¾eme so sÃºhlasmi a termÃ­nmi vÃ½meny.'],
+        ['AkÃ© sÃº Å¡tandardnÃ© termÃ­ny?', 'NÃ¡vrh a vÃ½roba 2â€“5 pracovnÃ½ch dnÃ­ podÄ¾a rozsahu, inÅ¡talÃ¡cia podÄ¾a dohody.'],
       ];
       foreach($faq as $f): ?>
         <div class="card">
@@ -311,18 +311,18 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- CTA: CENOVÁ PONUKA -->
+<!-- CTA: CENOVÃ PONUKA -->
 <?php kpk_form_notice(); ?>
 <section id="kpk-quote" class="section">
   <div class="container grid grid-2">
     <div class="card"  style="padding:16px">
 
-          <h2>Požiadať o cenovú ponuku</h2>
-          <p class="meta">Odpovieme spravidla do 24 hodín. Prosím uveďte plochu, typ fólie a termín.</p>
+          <h2>PoÅ¾iadaÅ¥ o cenovÃº ponuku</h2>
+          <p class="meta">Odpovieme spravidla do 24 hodÃ­n. ProsÃ­m uveÄte plochu, typ fÃ³lie a termÃ­n.</p>
           <ul class="meta u-mt-1">
-            <li>Povrch (sklo, stena, vozidlo…)</li>
-            <li>Rozmery a počet ks</li>
-            <li>Trvanie kampane / životnosť</li>
+            <li>Povrch (sklo, stena, vozidloâ€¦)</li>
+            <li>Rozmery a poÄet ks</li>
+            <li>Trvanie kampane / Å¾ivotnosÅ¥</li>
           </ul>
       </div>
 
@@ -330,20 +330,20 @@ get_header(); ?>
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>
-          <input type="tel" name="phone" placeholder="Telefón">
+          <input type="tel" name="phone" placeholder="TelefÃ³n">
           <select name="topic">
-            <option value="">Typ fólie</option>
-            <option>Monomerická</option>
-            <option>Polymerická</option>
+            <option value="">Typ fÃ³lie</option>
+            <option>MonomerickÃ¡</option>
+            <option>PolymerickÃ¡</option>
             <option>Liata</option>
             <option>One Way Vision</option>
-            <option>Podlahová</option>
+            <option>PodlahovÃ¡</option>
             <option>Tapeta / WallWrap</option>
-            <option>Iné</option>
+            <option>InÃ©</option>
           </select>
-          <textarea name="message" rows="4" placeholder="Povrch, rozmery, termín, prostredie (interiér/exteriér)"></textarea>
+          <textarea name="message" rows="4" placeholder="Povrch, rozmery, termÃ­n, prostredie (interiÃ©r/exteriÃ©r)"></textarea>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
-          <button type="submit">Získať ponuku</button>
+          <button type="submit">ZÃ­skaÅ¥ ponuku</button>
         </form>
     
   </div>

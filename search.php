@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="hero"><div class="container">
-  <h1>Hľadať: “<?php echo esc_html(get_search_query()); ?>”</h1>
+  <h1>HÄ¾adaÅ¥: â€œ<?php echo esc_html(get_search_query()); ?>â€</h1>
 </div></section>
 <section class="section"><div class="container">
   <?php if (have_posts()): ?>
@@ -18,7 +18,7 @@
     </div>
     <div class="section"><?php the_posts_pagination(); ?></div>
   <?php else: ?>
-    <p>Žiadne výsledky.</p>
+    <p>Å½iadne vÃ½sledky.</p>
   <?php endif; ?>
 </div></section>
 <?php get_footer(); ?>

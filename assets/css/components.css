@@ -166,7 +166,7 @@
 }
 .person-card .meta a { color: inherit; }
 
-/* --- Chips (категории) --- */
+/* --- Chips (ÐºÐ°Ñ‚ÐµÐ³Ð¾Ñ€Ð¸Ð¸) --- */
 .chips {
   display: flex;
   gap: 8px;
@@ -231,7 +231,7 @@
   border-radius:8px; font-weight:600;
 }
 .form .kpk-form-alert.is-error{ border-left-color:#dc2626; }
-/* скрыть, если пусто */
+/* ÑÐºÑ€Ñ‹Ñ‚ÑŒ, ÐµÑÐ»Ð¸ Ð¿ÑƒÑÑ‚Ð¾ */
 .form .kpk-form-alert:empty{ display:none; }
 
 /* === KPK Slider === */
@@ -240,14 +240,14 @@
 .kpk-slide{ min-width:100%; }
 .kpk-slide[aria-hidden="true"]{ visibility:hidden; }
 
-/* Двухколоночная компоновка слайда */
+/* Ð”Ð²ÑƒÑ…ÐºÐ¾Ð»Ð¾Ð½Ð¾Ñ‡Ð½Ð°Ñ ÐºÐ¾Ð¼Ð¿Ð¾Ð½Ð¾Ð²ÐºÐ° ÑÐ»Ð°Ð¹Ð´Ð° */
 .kpk-slide-grid{ display:grid; grid-template-columns:1.1fr 1fr; gap:28px; align-items:center; padding:24px; }
 .kpk-slide-media{ border-radius:16px; min-height:320px; display:flex; align-items:center; justify-content:center; }
 .kpk-slide-figure{ color:#fff; font-weight:800; font-size:28px; letter-spacing:.02em; }
 .kpk-slide-title{ font-size:34px; line-height:1.15; margin:.4em 0 .3em; }
 .kpk-slide-text{ font-size:16px; }
 
-/* Навигация */
+/* ÐÐ°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ñ */
 .kpk-nav{
   position:absolute; top:50%; transform:translateY(-50%);
   background:#fff; border:1px solid var(--color-border); width:40px; height:40px;
@@ -270,8 +270,8 @@
 /* Slider layers */
 .kpk-slider{ position:relative; }
 .kpk-slides{ position:relative; z-index:1; }
-.kpk-nav{ z-index:3; }       /* стрелки поверх всего */
-.kpk-dots{ z-index:2; }      /* точки над слайдами */
+.kpk-nav{ z-index:3; }       /* ÑÑ‚Ñ€ÐµÐ»ÐºÐ¸ Ð¿Ð¾Ð²ÐµÑ€Ñ… Ð²ÑÐµÐ³Ð¾ */
+.kpk-dots{ z-index:2; }      /* Ñ‚Ð¾Ñ‡ÐºÐ¸ Ð½Ð°Ð´ ÑÐ»Ð°Ð¹Ð´Ð°Ð¼Ð¸ */
 .kpk-slide-media{ position:relative; overflow:hidden; border-radius:16px; }
 .kpk-slide-media img{ width:100%; height:100%; object-fit:cover; display:block; }
 
@@ -303,7 +303,7 @@ body.lb-open{ overflow:hidden; }
 .lb__prev{ left:12px; top:50%; transform:translateY(-50%); }
 .lb__next{ right:12px; top:50%; transform:translateY(-50%); }
 
-/* точки (необязательно, но красиво) */
+/* Ñ‚Ð¾Ñ‡ÐºÐ¸ (Ð½ÐµÐ¾Ð±ÑÐ·Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾, Ð½Ð¾ ÐºÑ€Ð°ÑÐ¸Ð²Ð¾) */
 .lb__dots{ position:absolute; bottom:12px; left:0; right:0; display:flex; gap:8px; justify-content:center; pointer-events:auto; }
 .lb__dots button{ width:8px; height:8px; border-radius:999px; border:0; background:#64748b; cursor:pointer }
 .lb__dots button.is-active{ width:22px; background:#fff; }
@@ -314,7 +314,7 @@ body.lb-open{ overflow:hidden; }
 .lb__btn, .lb__dots{ z-index:3; pointer-events:auto; }
 
 
-/* адаптив */
+/* Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð² */
 @media (max-width:900px){
   .lb__stage{ padding:40px 16px; }
   .lb__img{ max-width:96vw; max-height:70vh; }
@@ -323,11 +323,11 @@ body.lb-open{ overflow:hidden; }
 /* === Client logos marquee (pure CSS) === */
 .logo-marquee{ display:grid; gap:12px; }
 .marquee{
-  --gap: 32px;      /* расстояние между логотипами */
-  --h:   80px;      /* высота строки на десктопе */
-  --speed: 40s;     /* скорость анимации одной петли */
+  --gap: 32px;      /* Ñ€Ð°ÑÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð¼ÐµÐ¶Ð´Ñƒ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿Ð°Ð¼Ð¸ */
+  --h:   80px;      /* Ð²Ñ‹ÑÐ¾Ñ‚Ð° ÑÑ‚Ñ€Ð¾ÐºÐ¸ Ð½Ð° Ð´ÐµÑÐºÑ‚Ð¾Ð¿Ðµ */
+  --speed: 40s;     /* ÑÐºÐ¾Ñ€Ð¾ÑÑ‚ÑŒ Ð°Ð½Ð¸Ð¼Ð°Ñ†Ð¸Ð¸ Ð¾Ð´Ð½Ð¾Ð¹ Ð¿ÐµÑ‚Ð»Ð¸ */
   position:relative; overflow:hidden;
-  /* мягкие края (затемнение по бокам) — можно убрать */
+  /* Ð¼ÑÐ³ÐºÐ¸Ðµ ÐºÑ€Ð°Ñ (Ð·Ð°Ñ‚ÐµÐ¼Ð½ÐµÐ½Ð¸Ðµ Ð¿Ð¾ Ð±Ð¾ÐºÐ°Ð¼) â€” Ð¼Ð¾Ð¶Ð½Ð¾ ÑƒÐ±Ñ€Ð°Ñ‚ÑŒ */
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
           mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
@@ -337,7 +337,7 @@ body.lb-open{ overflow:hidden; }
 }
 .marquee--rev .marquee__track{ animation-direction: reverse; }
 
-/* логотип */
+/* Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿ */
 .logo{
   flex:0 0 auto;
   display:flex; align-items:center; justify-content:center;
@@ -351,13 +351,13 @@ body.lb-open{ overflow:hidden; }
 }
 .logo:hover{ filter:none; opacity:1; transform: translateY(-1px); }
 
-/* анимация — трек содержит два набора, едем на -50% */
+/* Ð°Ð½Ð¸Ð¼Ð°Ñ†Ð¸Ñ â€” Ñ‚Ñ€ÐµÐº ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ñ‚ Ð´Ð²Ð° Ð½Ð°Ð±Ð¾Ñ€Ð°, ÐµÐ´ÐµÐ¼ Ð½Ð° -50% */
 @keyframes kpk-marquee{
   from{ transform: translateX(0); }
   to  { transform: translateX(-50%); }
 }
 
-/* адаптив */
+/* Ð°Ð´Ð°Ð¿Ñ‚Ð¸Ð² */
 @media (max-width: 900px){
   .marquee{ --h: 64px; --gap: 24px; --speed: 35s; }
   .logo{ width:120px; }
@@ -367,7 +367,7 @@ body.lb-open{ overflow:hidden; }
   .logo{ width:110px; }
 }
 
-/* уважаем предпочитаемое снижение движения */
+/* ÑƒÐ²Ð°Ð¶Ð°ÐµÐ¼ Ð¿Ñ€ÐµÐ´Ð¿Ð¾Ñ‡Ð¸Ñ‚Ð°ÐµÐ¼Ð¾Ðµ ÑÐ½Ð¸Ð¶ÐµÐ½Ð¸Ðµ Ð´Ð²Ð¸Ð¶ÐµÐ½Ð¸Ñ */
 @media (prefers-reduced-motion: reduce){
   .marquee__track{ animation: none; }
 }
@@ -398,9 +398,9 @@ body.lb-open{ overflow:hidden; }
 .seo-links{ margin:0; padding-left:18px; }
 .seo-links a{ text-decoration: none; }
 
-/* Clamp: сворачиваем длинный текст без JS */
+/* Clamp: ÑÐ²Ð¾Ñ€Ð°Ñ‡Ð¸Ð²Ð°ÐµÐ¼ Ð´Ð»Ð¸Ð½Ð½Ñ‹Ð¹ Ñ‚ÐµÐºÑÑ‚ Ð±ÐµÐ· JS */
 .seo-clamp{
-  --seo-clamp: 440px;           /* высота закрытого состояния */
+  --seo-clamp: 440px;           /* Ð²Ñ‹ÑÐ¾Ñ‚Ð° Ð·Ð°ÐºÑ€Ñ‹Ñ‚Ð¾Ð³Ð¾ ÑÐ¾ÑÑ‚Ð¾ÑÐ½Ð¸Ñ */
   position:relative;
   max-height: var(--seo-clamp);
   overflow: hidden;
@@ -413,7 +413,7 @@ body.lb-open{ overflow:hidden; }
 .seo-toggle:checked ~ .seo-columns{ max-height:none; }
 .seo-toggle:checked ~ .seo-columns::after{ display:none; }
 
-/* Кнопка «Zobraziť viac / Skryť text» */
+/* ÐšÐ½Ð¾Ð¿ÐºÐ° Â«ZobraziÅ¥ viac / SkryÅ¥ textÂ» */
 .seo-morebar{ text-align:center; margin-top:10px; }
 .seo-morebtn{
   display:inline-block; padding:10px 14px; border-radius:999px; border:1px solid var(--color-border);
@@ -422,7 +422,7 @@ body.lb-open{ overflow:hidden; }
 .seo-morebtn::after{ content: attr(data-more); }
 .seo-toggle:checked ~ .seo-morebar .seo-morebtn::after{ content: attr(data-less); }
 
-/* Адаптив */
+/* ÐÐ´Ð°Ð¿Ñ‚Ð¸Ð² */
 @media (max-width: 980px){
   .seo-columns{ grid-template-columns: 1fr; }
   .seo-aside__card{ position:relative; }

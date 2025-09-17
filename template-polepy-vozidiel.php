@@ -1,38 +1,38 @@
 <?php
 /**
  * Template Name: Polepy vozidiel (Landing)
- * Description: Konverzný landing pre polepy vozidiel: balíčky, proces, materiály, pred/po, logistika, recenzie, FAQ, CTA.
+ * Description: KonverznÃ½ landing pre polepy vozidiel: balÃ­Äky, proces, materiÃ¡ly, pred/po, logistika, recenzie, FAQ, CTA.
  */
 get_header(); ?>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <h1>Profesionálny polep na auto</h1>
-    <p class="meta-hero">Branding + ochrana laku. Certifikované materiály a montáž po celej SR.</p>
+    <h1>ProfesionÃ¡lny polep na auto</h1>
+    <p class="meta-hero">Branding + ochrana laku. CertifikovanÃ© materiÃ¡ly a montÃ¡Å¾ po celej SR.</p>
     <div class="badges" style="margin-top:12px">
-      <a class="hero-btn" href="#kpk-quote">Bezplatná konzultácia</a>
+      <a class="hero-btn" href="#kpk-quote">BezplatnÃ¡ konzultÃ¡cia</a>
     </div>
   </div>
 </section>
 
 <?php kpk_breadcrumbs(); ?>
 
-<!-- CENOVÉ BALÍČKY -->
+<!-- CENOVÃ‰ BALÃÄŒKY -->
 <section class="section">
   <div class="container">
-    <h2>Cenové balíčky</h2>
+    <h2>CenovÃ© balÃ­Äky</h2>
     <div class="grid grid-3">
       <div class="card">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG-0305-scaled-copy-1.png')"></div>
         <div style="padding:16px">
-          <h3>Basic — logo & kontakty</h3>
-          <p class="meta">Orientačne: podľa modelu a rozsahu. Ideálne pre firemné vozidlá a flotily.</p>
+          <h3>Basic â€” logo & kontakty</h3>
+          <p class="meta">OrientaÄne: podÄ¾a modelu a rozsahu. IdeÃ¡lne pre firemnÃ© vozidlÃ¡ a flotily.</p>
           <ul class="meta u-mt-1">
-            <li>Kvalitná fólia pre rovné plochy</li>
-            <li>Aplikácia na dvere / zadné sklo</li>
-            <li>Základná laminácia</li>
-            <li>Krátky čas montáže</li>
+            <li>KvalitnÃ¡ fÃ³lia pre rovnÃ© plochy</li>
+            <li>AplikÃ¡cia na dvere / zadnÃ© sklo</li>
+            <li>ZÃ¡kladnÃ¡ laminÃ¡cia</li>
+            <li>KrÃ¡tky Äas montÃ¡Å¾e</li>
           </ul>
         </div>
       </div>
@@ -40,13 +40,13 @@ get_header(); ?>
       <div class="card">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/WP_003371-scaled-copy.png')"></div>
         <div style="padding:16px">
-          <h3>Business — partial wrap</h3>
-          <p class="meta">Orientačne: podľa plochy, tvarov a grafiky. Silný vizuálny efekt za rozumný rozpočet.</p>
+          <h3>Business â€” partial wrap</h3>
+          <p class="meta">OrientaÄne: podÄ¾a plochy, tvarov a grafiky. SilnÃ½ vizuÃ¡lny efekt za rozumnÃ½ rozpoÄet.</p>
           <ul class="meta u-mt-1">
-            <li>Liata fólia na tvarované diely</li>
-            <li>Plné boky / kapota / zadná časť</li>
-            <li>UV laminácia (mat / lesk)</li>
-            <li>Záruka na materiál a montáž</li>
+            <li>Liata fÃ³lia na tvarovanÃ© diely</li>
+            <li>PlnÃ© boky / kapota / zadnÃ¡ ÄasÅ¥</li>
+            <li>UV laminÃ¡cia (mat / lesk)</li>
+            <li>ZÃ¡ruka na materiÃ¡l a montÃ¡Å¾</li>
           </ul>
         </div>
       </div>
@@ -54,18 +54,18 @@ get_header(); ?>
       <div class="card">
         <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2023/06/SpartanRace.jpg')"></div>
         <div style="padding:16px">
-          <h3>Full — full wrap</h3>
-          <p class="meta">Orientačne: podľa modelu, farby a povrchu. Maximálny branding a ochrana originálneho laku.</p>
+          <h3>Full â€” full wrap</h3>
+          <p class="meta">OrientaÄne: podÄ¾a modelu, farby a povrchu. MaximÃ¡lny branding a ochrana originÃ¡lneho laku.</p>
           <ul class="meta u-mt-1">
-            <li>Prémiová liata fólia + laminácia</li>
-            <li>Prekrytie celého vozidla</li>
-            <li>Starostlivosť a „aftercare“ manuál</li>
-            <li>Rozšírená záruka</li>
+            <li>PrÃ©miovÃ¡ liata fÃ³lia + laminÃ¡cia</li>
+            <li>Prekrytie celÃ©ho vozidla</li>
+            <li>StarostlivosÅ¥ a â€žaftercareâ€œ manuÃ¡l</li>
+            <li>RozÅ¡Ã­renÃ¡ zÃ¡ruka</li>
           </ul>
         </div>
       </div>
     </div>
-    <p class="meta u-mt-1">Pozn.: finálnu cenu upresníme po zameraní a schválení grafiky.</p>
+    <p class="meta u-mt-1">Pozn.: finÃ¡lnu cenu upresnÃ­me po zameranÃ­ a schvÃ¡lenÃ­ grafiky.</p>
   </div>
 </section>
 
@@ -76,10 +76,10 @@ get_header(); ?>
     <div class="grid grid-4">
       <?php
       $steps = [
-        ['Pripáva','Umytie a odmastenie auta', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/1img.jpg'],
-        ['Deinštalácia','Deinštalácia prvkov na karosérii', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/2img.jpg'],
-        ['Výroba','Tlač, rez, laminácia, kontrola kvality', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/3img.jpg'],
-        ['Inštalácia','Certifikovaná montáž, odovzdanie vozidla', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/4img.jpg']
+        ['PripÃ¡va','Umytie a odmastenie auta', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/1img.jpg'],
+        ['DeinÅ¡talÃ¡cia','DeinÅ¡talÃ¡cia prvkov na karosÃ©rii', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/2img.jpg'],
+        ['VÃ½roba','TlaÄ, rez, laminÃ¡cia, kontrola kvality', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/3img.jpg'],
+        ['InÅ¡talÃ¡cia','CertifikovanÃ¡ montÃ¡Å¾, odovzdanie vozidla', 'https://www.kpkreklama.sk/wp-content/uploads/2023/06/4img.jpg']
       ];
       foreach($steps as $s){
         echo '<div class="card">
@@ -95,50 +95,50 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- MATERIÁLY A ŽIVOTNOSŤ -->
+<!-- MATERIÃLY A Å½IVOTNOSÅ¤ -->
 <section class="section">
   <div class="container">
-    <h2>Materiály a životnosť</h2>
+    <h2>MateriÃ¡ly a Å¾ivotnosÅ¥</h2>
     <table class="table">
       <thead>
         <tr>
-          <th>Položka</th>
-          <th>Odporúčanie</th>
-          <th>Životnosť</th>
-          <th>Poznámka</th>
+          <th>PoloÅ¾ka</th>
+          <th>OdporÃºÄanie</th>
+          <th>Å½ivotnosÅ¥</th>
+          <th>PoznÃ¡mka</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Fólia (liata)</td>
-          <td>Karoséria, 3D prelisy</td>
-          <td>dlhodobá</td>
-          <td>Vysoká tvárnosť a priľnavosť</td>
+          <td>FÃ³lia (liata)</td>
+          <td>KarosÃ©ria, 3D prelisy</td>
+          <td>dlhodobÃ¡</td>
+          <td>VysokÃ¡ tvÃ¡rnosÅ¥ a priÄ¾navosÅ¥</td>
         </tr>
         <tr>
-          <td>Fólia (polymerická)</td>
-          <td>Rovné plochy, kratší čas</td>
-          <td>stredná</td>
-          <td>Cenovo dostupnejšia</td>
+          <td>FÃ³lia (polymerickÃ¡)</td>
+          <td>RovnÃ© plochy, kratÅ¡Ã­ Äas</td>
+          <td>strednÃ¡</td>
+          <td>Cenovo dostupnejÅ¡ia</td>
         </tr>
         <tr>
-          <td>Laminácia</td>
-          <td>Mat / lesk podľa vizuálu</td>
-          <td>–</td>
-          <td>UV ochrana a odolnosť voči oderu</td>
+          <td>LaminÃ¡cia</td>
+          <td>Mat / lesk podÄ¾a vizuÃ¡lu</td>
+          <td>â€“</td>
+          <td>UV ochrana a odolnosÅ¥ voÄi oderu</td>
         </tr>
         <tr>
-          <td>Starostlivosť</td>
-          <td>Šetrná chemia, ručné umývanie</td>
-          <td>–</td>
-          <td>Predlžuje životnosť a vzhľad</td>
+          <td>StarostlivosÅ¥</td>
+          <td>Å etrnÃ¡ chemia, ruÄnÃ© umÃ½vanie</td>
+          <td>â€“</td>
+          <td>PredlÅ¾uje Å¾ivotnosÅ¥ a vzhÄ¾ad</td>
         </tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<!-- GALÉRIA PRED/PO -->
+<!-- GALÃ‰RIA PRED/PO -->
 <section class="section">
   <div class="container">
     <h2>Pred / Po</h2>
@@ -166,10 +166,10 @@ get_header(); ?>
     <div class="grid grid-4">
       <?php
       $logi = [
-        ['Vyzdvihnutie','Prevoz vozidla / materiálu'],
-        ['Montáž on-site','Mobilné tímy a termíny mimo špičky'],
-        ['Doručenie','Odovzdanie a krátke zaškolenie'],
-        ['Servis','Záruka, opravy a prelepy']
+        ['Vyzdvihnutie','Prevoz vozidla / materiÃ¡lu'],
+        ['MontÃ¡Å¾ on-site','MobilnÃ© tÃ­my a termÃ­ny mimo Å¡piÄky'],
+        ['DoruÄenie','Odovzdanie a krÃ¡tke zaÅ¡kolenie'],
+        ['Servis','ZÃ¡ruka, opravy a prelepy']
       ];
       foreach($logi as $l){
         echo '<div class="card">
@@ -191,9 +191,9 @@ get_header(); ?>
     <div class="grid grid-3">
       <?php
       $quotes = [
-        ['„Rýchle termíny a čistá montáž. Auto vyzerá skvelo.“','Marek, fleet manažér'],
-        ['„Full wrap nám zvýšil viditeľnosť značky v meste.“','Lucia, marketing'],
-        ['„Po roku fólia drží a vyzerá ako nová.“','Peter, živnostník'],
+        ['â€žRÃ½chle termÃ­ny a ÄistÃ¡ montÃ¡Å¾. Auto vyzerÃ¡ skvelo.â€œ','Marek, fleet manaÅ¾Ã©r'],
+        ['â€žFull wrap nÃ¡m zvÃ½Å¡il viditeÄ¾nosÅ¥ znaÄky v meste.â€œ','Lucia, marketing'],
+        ['â€žPo roku fÃ³lia drÅ¾Ã­ a vyzerÃ¡ ako novÃ¡.â€œ','Peter, Å¾ivnostnÃ­k'],
       ];
       foreach($quotes as $q){
         echo '<div class="card">
@@ -215,12 +215,12 @@ get_header(); ?>
     <div class="grid grid-2">
       <?php
       $faq = [
-        ['Potrebujem zápis do evidencie vozidiel?', 'Pri zmene farby je potrebné overiť povinnosti podľa typu zmeny. S administratívou poradíme.'],
-        ['Ako sa o polep starať?', 'Odporúčame ručné umývanie, jemnú chémiu a vyhýbať sa agresívnym rozpúšťadlám.'],
-        ['Aká je záruka?', 'Závisí od materiálu a použitia. Štandardne poskytujeme záruku na materiál aj montáž.'],
-        ['Dá sa fólia bezpečne odstrániť?', 'Áno, s použitím tepla a čistenia lepidla. Pri dlhoročných fóliách rátame s dlhším časom.'],
-        ['Koľko trvá montáž?', 'Partial wrap zvyčajne 1 deň, full wrap 1–2 dni podľa modelu.'],
-        ['Môžete polepiť celú flotilu?', 'Áno, zabezpečíme plánovanie, logistiku a rovnakú kvalitu naprieč vozidlami.'],
+        ['Potrebujem zÃ¡pis do evidencie vozidiel?', 'Pri zmene farby je potrebnÃ© overiÅ¥ povinnosti podÄ¾a typu zmeny. S administratÃ­vou poradÃ­me.'],
+        ['Ako sa o polep staraÅ¥?', 'OdporÃºÄame ruÄnÃ© umÃ½vanie, jemnÃº chÃ©miu a vyhÃ½baÅ¥ sa agresÃ­vnym rozpÃºÅ¡Å¥adlÃ¡m.'],
+        ['AkÃ¡ je zÃ¡ruka?', 'ZÃ¡visÃ­ od materiÃ¡lu a pouÅ¾itia. Å tandardne poskytujeme zÃ¡ruku na materiÃ¡l aj montÃ¡Å¾.'],
+        ['DÃ¡ sa fÃ³lia bezpeÄne odstrÃ¡niÅ¥?', 'Ãno, s pouÅ¾itÃ­m tepla a Äistenia lepidla. Pri dlhoroÄnÃ½ch fÃ³liÃ¡ch rÃ¡tame s dlhÅ¡Ã­m Äasom.'],
+        ['KoÄ¾ko trvÃ¡ montÃ¡Å¾?', 'Partial wrap zvyÄajne 1 deÅˆ, full wrap 1â€“2 dni podÄ¾a modelu.'],
+        ['MÃ´Å¾ete polepiÅ¥ celÃº flotilu?', 'Ãno, zabezpeÄÃ­me plÃ¡novanie, logistiku a rovnakÃº kvalitu naprieÄ vozidlami.'],
       ];
       foreach($faq as $f){
         echo '<div class="card">
@@ -235,35 +235,35 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- FINÁLNY CTA  -->
+<!-- FINÃLNY CTA  -->
 <?php kpk_form_notice(); ?>
 <section id="kpk-quote" class="section bg-muted">
   <div class="container">
     <div class="card">
       <div class="grid grid-2" style="align-items:center">
         <div style="padding:16px">
-          <h2>Požiadať o cenovú ponuku</h2>
-          <p class="meta">Odpovieme do 24 hodín. Prosím, uveďte model vozidla, rozsah polepu a termín.</p>
+          <h2>PoÅ¾iadaÅ¥ o cenovÃº ponuku</h2>
+          <p class="meta">Odpovieme do 24 hodÃ­n. ProsÃ­m, uveÄte model vozidla, rozsah polepu a termÃ­n.</p>
           <ul class="meta u-mt-1">
             <li>Model a farba vozidla</li>
             <li>Rozsah (Basic / Partial / Full)</li>
-            <li>Preferovaný termín</li>
+            <li>PreferovanÃ½ termÃ­n</li>
           </ul>
         </div>
         <form method="post" class="form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>
-          <input type="tel" name="phone" placeholder="Telefón">
+          <input type="tel" name="phone" placeholder="TelefÃ³n">
           <select name="topic">
-            <option value="">Balíček</option>
+            <option value="">BalÃ­Äek</option>
             <option>Basic (logo & kontakty)</option>
             <option>Business (partial wrap)</option>
             <option>Full (full wrap)</option>
           </select>
-          <textarea name="message" rows="4" placeholder="Model vozidla, farba, rozsah, termín"></textarea>
+          <textarea name="message" rows="4" placeholder="Model vozidla, farba, rozsah, termÃ­n"></textarea>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
-          <button type="submit">Získať ponuku</button>
+          <button type="submit">ZÃ­skaÅ¥ ponuku</button>
         </form>
       </div>
     </div>

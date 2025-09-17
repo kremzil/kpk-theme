@@ -1,18 +1,18 @@
 <?php
 /**
- * Template Name: Napínacie systémy (Landing)
- * Description: Landing pre napínacie rámy na dodávky a nákladiaky: výhody vs fólie, kompatibilita, postup, galéria, cenové scenáre, FAQ, CTA.
+ * Template Name: NapÃ­nacie systÃ©my (Landing)
+ * Description: Landing pre napÃ­nacie rÃ¡my na dodÃ¡vky a nÃ¡kladiaky: vÃ½hody vs fÃ³lie, kompatibilita, postup, galÃ©ria, cenovÃ© scenÃ¡re, FAQ, CTA.
  */
 get_header(); ?>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
-    <h1>Napínacie rámy pre dodávky a nákladiaky</h1>
-    <p class="meta-hero">Výhodná alternatíva k fóliám: rýchla výmena kampaní, pevná konštrukcia a žiadne zásahy do laku. Inštalácia po celej SR.</p>
+    <h1>NapÃ­nacie rÃ¡my pre dodÃ¡vky a nÃ¡kladiaky</h1>
+    <p class="meta-hero">VÃ½hodnÃ¡ alternatÃ­va k fÃ³liÃ¡m: rÃ½chla vÃ½mena kampanÃ­, pevnÃ¡ konÅ¡trukcia a Å¾iadne zÃ¡sahy do laku. InÅ¡talÃ¡cia po celej SR.</p>
     <div class="badges" style="margin-top:12px">
-      <a class="hero-btn" href="#kpk-quote">Cenová ponuka</a>
-      <a class="hero-silent-btn" href="<?php echo esc_url( home_url('/kontakt/') ); ?>">Konzultácia</a>
+      <a class="hero-btn" href="#kpk-quote">CenovÃ¡ ponuka</a>
+      <a class="hero-silent-btn" href="<?php echo esc_url( home_url('/kontakt/') ); ?>">KonzultÃ¡cia</a>
     </div>
   </div>
 </section>
@@ -20,30 +20,30 @@ get_header(); ?>
 <?php kpk_breadcrumbs(); ?>
 
 
-<!-- VÝHODY VS FÓLIE -->
+<!-- VÃHODY VS FÃ“LIE -->
 <section class="section">
   <div class="container">
-    <h2>Výhody oproti fóliám</h2>
+    <h2>VÃ½hody oproti fÃ³liÃ¡m</h2>
     <div class="grid grid-3">
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/vymena.webp')"></div>
         <div style="padding:16px">
-          <h3>Rýchla výmena kampaní</h3>
-          <p class="meta">Grafiku vymeníte v priebehu minút bez prelepovania celých plôch.</p>
+          <h3>RÃ½chla vÃ½mena kampanÃ­</h3>
+          <p class="meta">Grafiku vymenÃ­te v priebehu minÃºt bez prelepovania celÃ½ch plÃ´ch.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/setrne.webp')"></div>
         <div style="padding:16px">
-          <h3>Šetrné k vozidlu</h3>
-          <p class="meta">Bez zásahov do lakovaných bokov — vhodné aj pre operatívny leasing.</p>
+          <h3>Å etrnÃ© k vozidlu</h3>
+          <p class="meta">Bez zÃ¡sahov do lakovanÃ½ch bokov â€” vhodnÃ© aj pre operatÃ­vny leasing.</p>
         </div>
       </div>
       <div class="card">
         <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/cena.webp')"></div>
         <div style="padding:16px">
-          <h3>Výmena plachiet do 30 minút</h3>
-          <p class="meta">Nižšie náklady pri častých zmenách kampaní, menej odstávok. </p>
+          <h3>VÃ½mena plachiet do 30 minÃºt</h3>
+          <p class="meta">NiÅ¾Å¡ie nÃ¡klady pri ÄastÃ½ch zmenÃ¡ch kampanÃ­, menej odstÃ¡vok. </p>
         </div>
       </div>
     </div>
@@ -52,13 +52,13 @@ get_header(); ?>
 
 <section class="section">
   <div class="container">
-    <h2>Systém na napínanie reklamných plachiet pre Vaše vozidlá</h2>
+    <h2>SystÃ©m na napÃ­nanie reklamnÃ½ch plachiet pre VaÅ¡e vozidlÃ¡</h2>
     <div class="card u-p-2">
-      Jednoduchý a bezpečný systém napínania reklamných plachiet pre nákladné a dodávkové vozidlá s pevnou nadstavbou.
-      Predstavujeme vám novinku v podobe hliníkových napínacích rámov reklamných plachiet pre vaše dodávkové a nákladné vozidlá s pevnou bočnou časťou. Výhodou je nízka obstarávacia cena a kratší čas inštalácie plachiet v porovnaní s fóliou.
+      JednoduchÃ½ a bezpeÄnÃ½ systÃ©m napÃ­nania reklamnÃ½ch plachiet pre nÃ¡kladnÃ© a dodÃ¡vkovÃ© vozidlÃ¡ s pevnou nadstavbou.
+      Predstavujeme vÃ¡m novinku v podobe hlinÃ­kovÃ½ch napÃ­nacÃ­ch rÃ¡mov reklamnÃ½ch plachiet pre vaÅ¡e dodÃ¡vkovÃ© a nÃ¡kladnÃ© vozidlÃ¡ s pevnou boÄnou ÄasÅ¥ou. VÃ½hodou je nÃ­zka obstarÃ¡vacia cena a kratÅ¡Ã­ Äas inÅ¡talÃ¡cie plachiet v porovnanÃ­ s fÃ³liou.
     </div>
     <div class="card u-mt-2 u-p-2">
-      Rám je vyrobený z ľahkého hliníkového profilu, ktorý je pripevnený k vozidlu pomocou špeciálnych držiakov. Na rám sa následne napína reklamná plachta, ktorá je vybavená okami pre jednoduché a pevné uchytenie. Plachty je možné jednoducho meniť podľa aktuálnych potrieb a kampaní.
+      RÃ¡m je vyrobenÃ½ z Ä¾ahkÃ©ho hlinÃ­kovÃ©ho profilu, ktorÃ½ je pripevnenÃ½ k vozidlu pomocou Å¡peciÃ¡lnych drÅ¾iakov. Na rÃ¡m sa nÃ¡sledne napÃ­na reklamnÃ¡ plachta, ktorÃ¡ je vybavenÃ¡ okami pre jednoduchÃ© a pevnÃ© uchytenie. Plachty je moÅ¾nÃ© jednoducho meniÅ¥ podÄ¾a aktuÃ¡lnych potrieb a kampanÃ­.
     </div> 
   </div>
 </section>
@@ -71,10 +71,10 @@ get_header(); ?>
       <div class="grid grid-2 u-mt-2">
         <?php
         $compat = [
-          ['Dodávky (L2/L3)','Bočné panely a zadné dvere, rám na mieru.'],
-          ['Box / skriňa','Hladké steny, ľahký hliníkový profil.'],
-          ['Chladiarenské nadstavby','Kompatibilné povrchy, šetrná montáž.'],
-          ['Nákladné vozidlá','Veľké plochy pre kampane a promo.'],
+          ['DodÃ¡vky (L2/L3)','BoÄnÃ© panely a zadnÃ© dvere, rÃ¡m na mieru.'],
+          ['Box / skriÅˆa','HladkÃ© steny, Ä¾ahkÃ½ hlinÃ­kovÃ½ profil.'],
+          ['ChladiarenskÃ© nadstavby','KompatibilnÃ© povrchy, Å¡etrnÃ¡ montÃ¡Å¾.'],
+          ['NÃ¡kladnÃ© vozidlÃ¡','VeÄ¾kÃ© plochy pre kampane a promo.'],
         ];
         foreach($compat as $c){
           echo '<div class="card">
@@ -86,47 +86,47 @@ get_header(); ?>
         }
         ?>
       </div>
-      <p class="meta u-mt-1">Rozmery a umiestnenie prispôsobíme typu karosérie a predpisom výrobcu.</p>
+      <p class="meta u-mt-1">Rozmery a umiestnenie prispÃ´sobÃ­me typu karosÃ©rie a predpisom vÃ½robcu.</p>
   </div>
 </section>
 
 
 
-<!-- CENOVÉ SCENÁRE -->
+<!-- CENOVÃ‰ SCENÃRE -->
 <section class="section bg-muted">
   <div class="container">
-    <h2>Cenové scenáre</h2>
+    <h2>CenovÃ© scenÃ¡re</h2>
     <table class="table">
       <thead>
         <tr>
-          <th>Scenár</th>
+          <th>ScenÃ¡r</th>
           <th>Jednotka</th>
-          <th>Orientačne</th>
-          <th>Poznámka</th>
+          <th>OrientaÄne</th>
+          <th>PoznÃ¡mka</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Rám + profil</td>
-          <td>bežný meter</td>
-          <td>individuálne</td>
-          <td>Podľa typu karosérie a hrán</td>
+          <td>RÃ¡m + profil</td>
+          <td>beÅ¾nÃ½ meter</td>
+          <td>individuÃ¡lne</td>
+          <td>PodÄ¾a typu karosÃ©rie a hrÃ¡n</td>
         </tr>
         <tr>
-          <td>Kompletný set (dodávka)</td>
+          <td>KompletnÃ½ set (dodÃ¡vka)</td>
           <td>set</td>
-          <td>individuálne</td>
-          <td>2× bok + zadné dvere, vrátane montáže</td>
+          <td>individuÃ¡lne</td>
+          <td>2Ã— bok + zadnÃ© dvere, vrÃ¡tane montÃ¡Å¾e</td>
         </tr>
         <tr>
-          <td>Výmena grafiky</td>
+          <td>VÃ½mena grafiky</td>
           <td>plochy</td>
-          <td>individuálne</td>
-          <td>Rýchla výmena bez odstávky dielne</td>
+          <td>individuÃ¡lne</td>
+          <td>RÃ½chla vÃ½mena bez odstÃ¡vky dielne</td>
         </tr>
       </tbody>
     </table>
-    <p class="meta u-mt-1">Presnú cenu stanovíme po zameraní a výbere materiálu.</p>
+    <p class="meta u-mt-1">PresnÃº cenu stanovÃ­me po zameranÃ­ a vÃ½bere materiÃ¡lu.</p>
   </div>
 </section>
 
@@ -137,12 +137,12 @@ get_header(); ?>
     <div class="grid grid-2">
       <?php
       $faq = [
-        ['Poškodí rám karosériu?', 'Montujeme na vhodné body a používame šetrné postupy, aby sme predišli poškodeniu povrchu.'],
-        ['Je to vhodné na zimu?', 'Áno, materiály sú odolné voči poveternostným vplyvom; napnutie priebežne kontrolujeme.'],
-        ['Ako rýchlo viem vymeniť kampaň?', 'Po prvotnej montáži rámu je výmena grafiky otázkou minút.'],
-        ['Je potrebná homologizácia?', 'Rámy nezasahujú do bezpečnostných prvkov; špecifiká konzultujeme podľa modelu.'],
-        ['Aké podklady na tlač?', 'PDF/TIFF v mierke, bleed podľa profilu, odporúčame lamináciu pri dlhodobom nasadení.'],
-        ['Dá sa to odstrániť bez stopy?', 'Áno, rám aj grafiku je možné demontovať; povrch sa dočistí.'],
+        ['PoÅ¡kodÃ­ rÃ¡m karosÃ©riu?', 'Montujeme na vhodnÃ© body a pouÅ¾Ã­vame Å¡etrnÃ© postupy, aby sme prediÅ¡li poÅ¡kodeniu povrchu.'],
+        ['Je to vhodnÃ© na zimu?', 'Ãno, materiÃ¡ly sÃº odolnÃ© voÄi poveternostnÃ½m vplyvom; napnutie priebeÅ¾ne kontrolujeme.'],
+        ['Ako rÃ½chlo viem vymeniÅ¥ kampaÅˆ?', 'Po prvotnej montÃ¡Å¾i rÃ¡mu je vÃ½mena grafiky otÃ¡zkou minÃºt.'],
+        ['Je potrebnÃ¡ homologizÃ¡cia?', 'RÃ¡my nezasahujÃº do bezpeÄnostnÃ½ch prvkov; Å¡pecifikÃ¡ konzultujeme podÄ¾a modelu.'],
+        ['AkÃ© podklady na tlaÄ?', 'PDF/TIFF v mierke, bleed podÄ¾a profilu, odporÃºÄame laminÃ¡ciu pri dlhodobom nasadenÃ­.'],
+        ['DÃ¡ sa to odstrÃ¡niÅ¥ bez stopy?', 'Ãno, rÃ¡m aj grafiku je moÅ¾nÃ© demontovaÅ¥; povrch sa doÄistÃ­.'],
       ];
       foreach($faq as $f){
         echo '<div class="card">
@@ -157,37 +157,37 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- FINÁLNY CTA (JEDNA FORMA) -->
+<!-- FINÃLNY CTA (JEDNA FORMA) -->
 <?php kpk_form_notice(); ?>
 <section id="kpk-quote" class="section">
   <div class="container">
     <div class="card">
       <div class="grid grid-2" style="align-items:center">
         <div style="padding:16px">
-          <h2>Požiadať o cenovú ponuku</h2>
-          <p class="meta">Napíšte typ vozidla, rozmery panelov a plánovaný rozsah – pripravíme riešenie na mieru.</p>
+          <h2>PoÅ¾iadaÅ¥ o cenovÃº ponuku</h2>
+          <p class="meta">NapÃ­Å¡te typ vozidla, rozmery panelov a plÃ¡novanÃ½ rozsah â€“ pripravÃ­me rieÅ¡enie na mieru.</p>
           <ul class="meta u-mt-1">
-            <li>• Typ karosérie (dodávka/box/chladiarenská/skriňa)</li>
-            <li>• Počet plôch (boky, zadné dvere)</li>
-            <li>• Predpokladaný termín a lokalita</li>
+            <li>â€¢ Typ karosÃ©rie (dodÃ¡vka/box/chladiarenskÃ¡/skriÅˆa)</li>
+            <li>â€¢ PoÄet plÃ´ch (boky, zadnÃ© dvere)</li>
+            <li>â€¢ PredpokladanÃ½ termÃ­n a lokalita</li>
           </ul>
         </div>
         <form method="post" class="form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>
-          <input type="tel" name="phone" placeholder="Telefón">
+          <input type="tel" name="phone" placeholder="TelefÃ³n">
           <select name="topic">
             <option value="">Typ vozidla</option>
-            <option>Dodávka (L2/L3)</option>
-            <option>Box / skriňa</option>
-            <option>Chladiarenská</option>
-            <option>Nákladné vozidlo</option>
-            <option>Iné</option>
+            <option>DodÃ¡vka (L2/L3)</option>
+            <option>Box / skriÅˆa</option>
+            <option>ChladiarenskÃ¡</option>
+            <option>NÃ¡kladnÃ© vozidlo</option>
+            <option>InÃ©</option>
           </select>
-          <textarea name="message" rows="4" placeholder="Rozmery plôch, počet, termín, mesto"></textarea>
+          <textarea name="message" rows="4" placeholder="Rozmery plÃ´ch, poÄet, termÃ­n, mesto"></textarea>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
-          <button type="submit">Získať ponuku</button>
+          <button type="submit">ZÃ­skaÅ¥ ponuku</button>
         </form>
       </div>
     </div>
