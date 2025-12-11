@@ -142,21 +142,19 @@ get_header(); ?>
 <section class="section">
   <div class="container">
     <h2>Pred / Po</h2>
-    <div class="grid grid-2">
-      <?php for($i=1; $i<=8; $i++): ?>
-        <div class="card">
+    <div class="grid">
+       <div class="card">
           <div class="grid grid-2">
             <div>
-              <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/polepy/Audi-Q5-Before.webp')"></div>
               <div style="padding:8px"><p class="meta">Pred</p></div>
             </div>
             <div>
-              <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/polepy/Audi-Q5-After.webp')"></div>
               <div style="padding:8px"><p class="meta">Po</p></div>
             </div>
           </div>
         </div>
-      <?php endfor; ?>
     </div>
   </div>
 </section>
@@ -252,7 +250,7 @@ get_header(); ?>
             <li>Preferovaný termín</li>
           </ul>
         </div>
-        <form method="post" class="form" aria-label="Quote form">
+        <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>

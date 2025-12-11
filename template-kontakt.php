@@ -40,11 +40,15 @@ get_header(); ?>
         </div>
       </div>
 
-      <div class="card u-center u-p-1">
-      
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1400.8377921477247!2d21.2499117!3d48.6931777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee15a9ca07ff1%3A0xbfee74101cfc8665!2sKPK%20Print%20s.r.o.%20%2F%20KPK%20Reklama%20-%20fabrika%20na%20reklamu!5e1!3m2!1ssk!2sby!4v1757888603866!5m2!1ssk!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       
-      </div>
+<div class="card u-center u-p-1 map-card">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1159.2168196470202!2d21.249122057662305!3d48.69287300110936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee0011df0b0b3%3A0xeefacb6063c0c18f!2zUm96dm9qb3bDoSAyLCAwNDAgMTEgS2_FoWljZSwg0KHQu9C-0LLQsNC60LjRjw!5e1!3m2!1sru!2sby!4v1763486807588!5m2!1sru!2sby"
+          width="600" height="312" style="border:0;" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <a class="contact button map-btn" href="https://maps.app.goo.gl/5YD5eWXNxh9PMgA99" target="_blank">
+    Otvoriť v Google Maps
+  </a>
+</div>
     </div>
   </div>
 </section>
@@ -118,9 +122,8 @@ get_header(); ?>
         <div style="padding:16px">
           <h3>Sociálne siete</h3>
           <ul class="meta u-mt-1">
-            <li>• <a href="<?php echo esc_url( get_theme_mod('kpk_fb', '#') ); ?>" rel="noopener" target="_blank">Facebook</a></li>
-            <li>• <a href="<?php echo esc_url( get_theme_mod('kpk_ig', '#') ); ?>" rel="noopener" target="_blank">Instagram</a></li>
-            <li>• <a href="<?php echo esc_url( get_theme_mod('kpk_li', '#') ); ?>" rel="noopener" target="_blank">LinkedIn</a></li>
+            <li><a href="<?php echo esc_url( get_theme_mod('kpk_fb', '#') ); ?>" rel="noopener" target="_blank">Facebook</a></li>
+            <li><a href="<?php echo esc_url( get_theme_mod('kpk_ig', '#') ); ?>" rel="noopener" target="_blank">Instagram</a></li>
           </ul>
           <p class="meta u-mt-1">Aktuálne ukážky prác a novinky.</p>
         </div>
@@ -138,13 +141,13 @@ get_header(); ?>
           <h2>Napíšte nám</h2>
           <p class="meta">Vyberte tému a stručne popíšte projekt – odpovieme spravidla do 24 hodín.</p>
           <ul class="meta u-mt-1">
-            <li>• Cenová ponuka</li>
-            <li>• Konzultácia</li>
-            <li>• Servis</li>
-            <li>• Iné</li>
+            <li>Cenová ponuka</li>
+            <li>Konzultácia</li>
+            <li>Servis</li>
+            <li>Iné</li>
           </ul>
         </div>
-        <form method="post" class="form" aria-label="Contact form">
+        <form method="post" class="form kpk-form" aria-label="Contact form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>
@@ -159,6 +162,8 @@ get_header(); ?>
           <textarea name="message" rows="4" placeholder="Správa" required></textarea>
           <?php kpk_form_notice(); ?>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
+			<input type="hidden" name="kpk_recaptcha_token" value="">
+
           <button type="submit">Odoslať</button>
         </form>
       </div>

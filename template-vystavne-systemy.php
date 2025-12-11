@@ -177,7 +177,7 @@ Pripravíme modulárne sety podľa priestoru a rozpočtu (Starter/Pro/Premium al
           </ul>
         </div>
         <?php kpk_form_notice(); ?>
-        <form method="post" class="form" aria-label="Quote form">
+        <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>

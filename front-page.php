@@ -27,23 +27,23 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
       Vlastná výroba v Košiciach, rýchle termíny a montáž po celom Slovensku – od návrhu po inštaláciu.
     </p>
     <div class="cta-wrap">
-      <a class="hero-btn" href="<?php echo esc_url(home_url('/produkty/')); ?>">Pozrieť produkty</a>
+      <a class="hero-btn" href="#produkty">Pozrieť produkty</a>
       <a class="hero-silent-btn" href="#kpk-quote">Požiadať o cenovú ponuku</a>
     </div>
 
     <!-- METRICS -->
     <div class="metrics badges">
-      <div class="badge"><strong class="meta-hero-strong">520+</strong><br><span class="meta-hero">projektov ročne</span></div>
-      <div class="badge"><strong class="meta-hero-strong">25</strong><br><span class="meta-hero">špecialistov</span></div>
-      <div class="badge"><strong class="meta-hero-strong">18</strong><br><span class="meta-hero">technológií</span></div>
-      <div class="badge"><strong class="meta-hero-strong">65 000 m²</strong><br><span class="meta-hero">tlače ročne</span></div>
+      <div class="badge"><strong class="meta-hero-strong">16 000+</strong><br><span class="meta-hero">projektov ročne</span></div>
+      <div class="badge"><strong class="meta-hero-strong">50+</strong><br><span class="meta-hero">špecialistov</span></div>
+      <div class="badge"><strong class="meta-hero-strong">32+</strong><br><span class="meta-hero">technológií</span></div>
+      <div class="badge"><strong class="meta-hero-strong">1 mil+ m²</strong><br><span class="meta-hero">tlače ročne</span></div>
     </div>
   </div>
 </section>
 
 <!-- PRODUKTY / RIEŠENIA -->
 <section class="section home tiles">
-  <div class="container">
+  <div class="container" id="produkty">
     <h2>Produkty a riešenia</h2>
     <div class="grid grid-4">
       <?php
@@ -164,7 +164,7 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
       <div class="kpk-slides">
 
         <?php
-        // Слайды: правь тексты/теги ниже по вкусу
+        
         $slides = [
 
           // Слайд 1: UV flatbed rigid
@@ -275,7 +275,7 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
         reklamu, ktorá <em>naozaj funguje</em> – od návrhu po inštaláciu s vlastnou výrobou v Košiciach.
       </p>
       <div class="chips">
-        <a class="chip" href="<?php echo esc_url( home_url('/vonkajsia-reklama/') ); ?>">Vonkajšia reklama</a>
+        <a class="chip" href="<?php echo esc_url( home_url('/outdoor/') ); ?>">Vonkajšia reklama</a>
         <a class="chip" href="<?php echo esc_url( home_url('/samolepiace-folie/') ); ?>">Samolepiace fólie</a>
         <a class="chip" href="<?php echo esc_url( home_url('/kartonove-stojany/') ); ?>">POS stojany</a>
         <a class="chip" href="<?php echo esc_url( home_url('/vystavne-systemy/') ); ?>">Výstavné systémy</a>
@@ -284,8 +284,6 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
       </div>
     </header>
 
-    <!-- clamp: свернём длинный текст до N px, «Zobraziť viac» раскроет -->
-    <input id="seo-more" class="seo-toggle" type="checkbox" hidden aria-hidden="true">
     <div class="seo-columns">
       <div class="seo-body">
         <p>
@@ -449,26 +447,35 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
         <li>Overené materiály a technológie</li>
       </ul>
     </div>
-    <form method="post" class="form" aria-label="Quote form">
-      <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
-      <input type="text" name="name" placeholder="Meno a priezvisko" required>
-      <input type="email" name="email" placeholder="E-mail" required>
-      <input type="tel" name="phone" placeholder="Telefón">
-      <select name="topic">
-        <option value="">Téma dopytu</option>
-        <option>Vonkajšia reklama</option>
-        <option>Samolepiace fólie</option>
-        <option>Kartónové stojany</option>
-        <option>Výstavné systémy</option>
-        <option>Polepy vozidiel</option>
-        <option>Maloplošná tlač</option>
-        <option>Napínacie systémy</option>
-        <option>Iné</option>
-      </select>
-      <textarea name="message" rows="4" placeholder="Stručný popis projektu / rozmery / termín"></textarea>
-      <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
-      <button type="submit">Odoslať dopyt</button>
-    </form>
+<form id="kpk-quote-form" method="post" class="form kpk-form" aria-label="Quote form">
+	<?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
+
+	<input type="text" name="name" placeholder="Meno a priezvisko" required>
+	<input type="email" name="email" placeholder="E-mail" required>
+	<input type="tel" name="phone" placeholder="Telefón">
+
+	<select name="topic">
+		<option value="">Téma dopytu</option>
+		<option>Vonkajšia reklama</option>
+		<option>Samolepiace fólie</option>
+		<option>Kartónové stojany</option>
+		<option>Výstavné systémy</option>
+		<option>Polepy vozidiel</option>
+		<option>Maloplošná tlač</option>
+		<option>Napínacie systémy</option>
+		<option>Iné</option>
+	</select>
+
+	<textarea name="message" rows="4" placeholder="Stručný popis projektu / rozmery / termín"></textarea>
+
+	<input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
+
+	<!-- reCAPTCHA v3 -->
+	<input type="hidden" name="kpk_recaptcha_token" id="kpk_recaptcha_token">
+
+	<button type="submit">Odoslať dopyt</button>
+</form>
+
   </div>
 </section>
 

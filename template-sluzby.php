@@ -63,7 +63,6 @@ get_header(); ?>
       ];
       foreach($steps as $i => $st){
         echo '<div class="card">
-                <div class="figure"></div>
                 <div style="padding:16px">
                   <h3>'.($i+1).'. '.$st[0].'</h3>
                   <p class="meta">'.$st[1].'</p>
@@ -106,19 +105,45 @@ get_header(); ?>
   </div>
 </section>
 
-<!-- CASE MINI-GALÉRIA -->
-<section class="section">
+<!-- GALÉRIA -->
+<section class="section" id="maloplosna-gallery">
   <div class="container">
     <h2>Ukážky realizácií</h2>
-    <div class="grid grid-3">
-      <?php for($i=1;$i<=6;$i++): ?>
-        <a class="card" href="#"><div class="figure"></div><div style="padding:12px"><h3 class="meta">Služby – projekt <?php echo $i; ?></h3></div></a>
-      <?php endfor; ?>
+
+    <div class="grid grid-3 tiles">
+      <?php
+        $gallery = [
+          ['title'=>'1', 'img'=>'https://www.kpkreklama.sk/wp-content/uploads/2022/11/241690259_4211602432227988_5143389094334154690_n.jpg'],
+          ['title'=>'2', 'img'=>'https://www.kpkreklama.sk/wp-content/uploads/2022/11/271840600_4630485723672988_672674140470928561_n-copy.png'],
+          ['title'=>'3', 'img'=>'https://www.kpkreklama.sk/wp-content/uploads/2022/11/122116307_3310896628965244_4006765038207542467_n-copy.jpg'],
+          ['title'=>'4', 'img'=>'https://www.kpkreklama.sk/wp-content/uploads/2022/11/271844055_4630485757006318_7065288016743897656_n-copy.png'],
+          ['title'=>'5', 'img'=>'https://www.kpkreklama.sk/wp-content/uploads/2022/11/296361627_5209268839128004_8008745352077260214_n.jpg'],
+          ['title'=>'6', 'img'=>'https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0544-1200x900-1-copy.png'],
+        ];
+        $ph = get_stylesheet_directory_uri().'/assets/placeholder.jpg';
+
+        foreach ($gallery as $i => $s):
+          // превью (thumb) и полноразмер (full) — если нет full, используем img
+          $thumb = !empty($s['thumb']) ? kpk_resolve_img($s['thumb']) : kpk_resolve_img($s['img']);
+          $full  = !empty($s['full'])  ? kpk_resolve_img($s['full'])  : kpk_resolve_img($s['img']);
+          if (!$thumb) $thumb = $ph;
+          if (!$full)  $full  = $thumb;
+      ?>
+        <div class="card js-lb-item"
+             role="button" tabindex="0"
+             aria-label="Zväčšiť: <?php echo esc_attr($s['title']); ?>"
+             data-full="<?php echo esc_attr($full); ?>"
+             data-title="<?php echo esc_attr($s['title']); ?>"
+             data-index="<?php echo (int)$i; ?>">
+          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+        
+        </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
 
-<!-- FINÁLNY CTA (JEDNA FORMA) -->
+<!-- FINÁLNY CTA -->
 <section id="kpk-quote" class="section bg-muted">
   <div class="container">
     <div class="card">
@@ -133,7 +158,7 @@ get_header(); ?>
           </ul>
         </div>
         <?php kpk_form_notice(); ?>
-        <form method="post" class="form" aria-label="Quote form">
+        <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>

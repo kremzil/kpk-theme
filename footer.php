@@ -77,62 +77,6 @@
   <div class="container footer-copy">© <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Všetky práva vyhradené.','kpk'); ?></div>
 </footer>
 
-<script>
-(function(){
-  document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('form.form').forEach(function(form){
-      if (!form.querySelector('.kpk-form-alert')) {
-        const box = document.createElement('div');
-        box.className = 'kpk-form-alert';
-        box.setAttribute('role','status');
-        box.setAttribute('aria-live','polite');
-        form.insertBefore(box, form.firstElementChild);
-      }
-    });
-  });
-
-  const forms = document.querySelectorAll('form.form');
-  if(!forms.length) return;
-
-  forms.forEach(form => {
-    form.addEventListener('submit', function(e){
-      if(!form.querySelector('input[name="kpk_form_nonce"]')) return;
-      e.preventDefault();
-
-      const btn = form.querySelector('button[type="submit"]');
-      const btnText = btn ? btn.textContent : '';
-      if(btn){ btn.disabled = true; btn.textContent = 'Odosielam…'; }
-
-      const data = new FormData(form);
-      data.append('kpk_ajax','1');
-
-      fetch(window.location.href, {
-        method: 'POST',
-        body: data,
-        headers: {'X-Requested-With':'XMLHttpRequest'}
-      })
-      .then(r => r.ok ? r.json() : Promise.reject())
-      .then(res => {
-        showAlert(form, (res && res.data && res.data.message) ? res.data.message : 'Ďakujeme! Vaša správa bola odoslaná.');
-        try { form.reset(); } catch(e){}
-      })
-      .catch(() => {
-        showAlert(form, 'Ups — nepodarilo sa odoslať. Skúste znova alebo nás kontaktujte telefonicky.', true);
-      })
-      .finally(() => {
-        if(btn){ btn.disabled = false; btn.textContent = btnText; }
-      });
-    });
-  });
-
-  function showAlert(form, text, isError){
-    const box = form.querySelector('.kpk-form-alert');
-    if(!box) return;
-    box.textContent = text;
-    box.classList.toggle('is-error', !!isError);
-  }
-})();
-</script>
 
 <script>
 (function(){

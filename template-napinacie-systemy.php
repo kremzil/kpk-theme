@@ -9,10 +9,10 @@ get_header(); ?>
 <section class="hero">
   <div class="container">
     <h1>Napínacie rámy pre dodávky a nákladiaky</h1>
-    <p class="meta">Výhodná alternatíva k fóliám: rýchla výmena kampaní, pevná konštrukcia a žiadne zásahy do laku. Inštalácia po celej SR.</p>
+    <p class="meta-hero">Výhodná alternatíva k fóliám: rýchla výmena kampaní, pevná konštrukcia a žiadne zásahy do laku. Inštalácia po celej SR.</p>
     <div class="badges" style="margin-top:12px">
-      <a class="cta-btn" href="#kpk-quote">Cenová ponuka</a>
-      <a class="cta-btn" href="<?php echo esc_url( home_url('/kontakt/') ); ?>">Konzultácia</a>
+      <a class="hero-btn" href="#kpk-quote">Cenová ponuka</a>
+      <a class="hero-silent-btn" href="<?php echo esc_url( home_url('/kontakt/') ); ?>">Konzultácia</a>
     </div>
   </div>
 </section>
@@ -26,94 +26,71 @@ get_header(); ?>
     <h2>Výhody oproti fóliám</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/vymena.webp')"></div>
         <div style="padding:16px">
           <h3>Rýchla výmena kampaní</h3>
           <p class="meta">Grafiku vymeníte v priebehu minút bez prelepovania celých plôch.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/setrne.webp')"></div>
         <div style="padding:16px">
           <h3>Šetrné k vozidlu</h3>
           <p class="meta">Bez zásahov do lakovaných bokov — vhodné aj pre operatívny leasing.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure"></div>
+        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/cena.webp')"></div>
         <div style="padding:16px">
-          <h3>Cena a prevádzka</h3>
-          <p class="meta">Nižšie náklady pri častých zmenách kampaní, menej odstávok.</p>
+          <h3>Výmena plachiet do 30 minút</h3>
+          <p class="meta">Nižšie náklady pri častých zmenách kampaní, menej odstávok. </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <h2>Systém na napínanie reklamných plachiet pre Vaše vozidlá</h2>
+    <div class="card u-p-2">
+      Jednoduchý a bezpečný systém napínania reklamných plachiet pre nákladné a dodávkové vozidlá s pevnou nadstavbou.
+      Predstavujeme vám novinku v podobe hliníkových napínacích rámov reklamných plachiet pre vaše dodávkové a nákladné vozidlá s pevnou bočnou časťou. Výhodou je nízka obstarávacia cena a kratší čas inštalácie plachiet v porovnaní s fóliou.
+    </div>
+    <div class="card u-mt-2 u-p-2">
+      Rám je vyrobený z ľahkého hliníkového profilu, ktorý je pripevnený k vozidlu pomocou špeciálnych držiakov. Na rám sa následne napína reklamná plachta, ktorá je vybavená okami pre jednoduché a pevné uchytenie. Plachty je možné jednoducho meniť podľa aktuálnych potrieb a kampaní.
+    </div> 
+  </div>
+</section>
+
 <!-- KOMPATIBILITA -->
 <section class="section">
   <div class="container">
-    <h2>Kompatibilita</h2>
-    <div class="grid grid-4">
-      <?php
-      $compat = [
-        ['Dodávky (L2/L3)','Bočné panely a zadné dvere, rám na mieru.'],
-        ['Box / skriňa','Hladké steny, ľahký hliníkový profil.'],
-        ['Chladiarenské nadstavby','Kompatibilné povrchy, šetrná montáž.'],
-        ['Nákladné vozidlá','Veľké plochy pre kampane a promo.'],
-      ];
-      foreach($compat as $c){
-        echo '<div class="card">
-                <div class="figure"></div>
-                <div style="padding:16px">
-                  <h3>'.$c[0].'</h3>
-                  <p class="meta">'.$c[1].'</p>
-                </div>
-              </div>';
-      }
-      ?>
-    </div>
-    <p class="meta u-mt-1">Rozmery a umiestnenie prispôsobíme typu karosérie a predpisom výrobcu.</p>
+      <h2>Kompatibilita</h2>
+      <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2023/06/slider-2-1024x512-1.jpg')"></div>
+      <div class="grid grid-2 u-mt-2">
+        <?php
+        $compat = [
+          ['Dodávky (L2/L3)','Bočné panely a zadné dvere, rám na mieru.'],
+          ['Box / skriňa','Hladké steny, ľahký hliníkový profil.'],
+          ['Chladiarenské nadstavby','Kompatibilné povrchy, šetrná montáž.'],
+          ['Nákladné vozidlá','Veľké plochy pre kampane a promo.'],
+        ];
+        foreach($compat as $c){
+          echo '<div class="card">
+                    <div style="padding:16px">
+                    <h3>'.$c[0].'</h3>
+                    <p class="meta">'.$c[1].'</p>
+                  </div>
+                </div>';
+        }
+        ?>
+      </div>
+      <p class="meta u-mt-1">Rozmery a umiestnenie prispôsobíme typu karosérie a predpisom výrobcu.</p>
   </div>
 </section>
 
-<!-- AKO TO FUNGUJE (POSTUP) -->
-<section class="section">
-  <div class="container">
-    <h2>Ako to funguje</h2>
-    <div class="grid grid-4">
-      <?php
-      $steps = [
-        ['Zameranie','Zistenie presných rozmerov a podkladu.'],
-        ['Výroba rámu','Hliníkové profily a napínacie lišty na mieru.'],
-        ['Tlač panelov','Plachta/print rezaná s tunelmi alebo lemovaním.'],
-        ['Montáž','Osadenie profilov a napnutie grafiky, kontrola.'],
-      ];
-      foreach($steps as $s){
-        echo '<div class="card">
-                <div class="figure"></div>
-                <div style="padding:16px">
-                  <h3>'.$s[0].'</h3>
-                  <p class="meta">'.$s[1].'</p>
-                </div>
-              </div>';
-      }
-      ?>
-    </div>
-  </div>
-</section>
 
-<!-- GALÉRIA -->
-<section class="section">
-  <div class="container">
-    <h2>Ukážky realizácií</h2>
-    <div class="grid grid-3">
-      <?php for($i=1;$i<=9;$i++): ?>
-        <a class="card" href="#"><div class="figure"></div><div style="padding:12px"><h3 class="meta">Napínací rám <?php echo $i; ?></h3></div></a>
-      <?php endfor; ?>
-    </div>
-  </div>
-</section>
 
 <!-- CENOVÉ SCENÁRE -->
 <section class="section bg-muted">
@@ -195,7 +172,7 @@ get_header(); ?>
             <li>• Predpokladaný termín a lokalita</li>
           </ul>
         </div>
-        <form method="post" class="form" aria-label="Quote form">
+        <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
           <input type="email" name="email" placeholder="E-mail" required>

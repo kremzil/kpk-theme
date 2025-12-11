@@ -52,6 +52,160 @@ function kpk_resolve_img($v){
   return kpk_asset($v); // относительный путь → URL темы
 }
 
+//recaptcha v3
+function kpk_enqueue_recaptcha_script() {
+	$site_key = '6LfDJt0rAAAAAJkGQ1RQpNgDAdQN_-Fd4OB-U20W';
+	if ( ! $site_key ) {
+		return;
+	}
+
+	// Скрипт Google reCAPTCHA v3
+	wp_enqueue_script(
+		'google-recaptcha-v3',
+		'https://www.google.com/recaptcha/api.js?render=' . $site_key,
+		array(),
+		null,
+		true
+	);
+
+	wp_add_inline_script(
+		'google-recaptcha-v3',
+		"
+	document.addEventListener('DOMContentLoaded', function() {
+		var forms = document.querySelectorAll('form.kpk-form');
+		if (!forms.length) return;
+
+		forms.forEach(function(form) {
+			var submitBtn = form.querySelector('button[type=\"submit\"], input[type=\"submit\"]');
+
+			form.addEventListener('submit', function(e) {
+				e.preventDefault();
+
+				// защита от дабл-кликов
+				if (form.dataset.sending === '1') return;
+				form.dataset.sending = '1';
+
+				if (submitBtn) {
+					submitBtn.disabled = true;
+					submitBtn.dataset.originalText = submitBtn.textContent;
+					submitBtn.textContent = 'Odosielam...';
+				}
+
+				// убираем старое уведомление, если было
+				var oldNotice = form.querySelector('.kpk-form-notice');
+				if (oldNotice) oldNotice.remove();
+
+				grecaptcha.ready(function() {
+					grecaptcha.execute('{$site_key}', {action: 'kpk_quote'}).then(function(token) {
+						var tokenField = form.querySelector('input[name=\"kpk_recaptcha_token\"]');
+						if (!tokenField) {
+							tokenField = document.createElement('input');
+							tokenField.type = 'hidden';
+							tokenField.name = 'kpk_recaptcha_token';
+							form.appendChild(tokenField);
+						}
+						tokenField.value = token;
+
+						var formData = new FormData(form);
+						formData.append('kpk_ajax', '1');
+
+						fetch(window.location.href, {
+							method: 'POST',
+							body: formData,
+							headers: {'X-Requested-With': 'XMLHttpRequest'}
+						})
+						.then(function(response) {
+							return response.json();
+						})
+						.then(function(data) {
+							var notice = document.createElement('div');
+							notice.className = 'kpk-form-notice card';
+							notice.style.margin = '12px 0';
+							notice.style.padding = '12px 16px';
+							notice.style.borderLeft = '4px solid var(--color-accent, #0f9d58)';
+
+							if (data && data.success) {
+								notice.innerHTML = '<strong>Ďakujeme!</strong> ' + (data.data && data.data.message ? data.data.message : 'Vaša správa bola odoslaná.');
+								form.reset();
+							} else {
+								notice.style.borderLeftColor = '#c00';
+								var msg = (data && data.data && data.data.message) ? data.data.message : 'Nepodarilo sa odoslať. Skúste znova alebo nás kontaktujte telefonicky.';
+								notice.innerHTML = '<strong>Ups!</strong> ' + msg;
+							}
+
+							form.appendChild(notice);
+						})
+						.catch(function(error) {
+							console.error('KPK form error:', error);
+							var notice = document.createElement('div');
+							notice.className = 'kpk-form-notice card';
+							notice.style.margin = '12px 0';
+							notice.style.padding = '12px 16px';
+							notice.style.borderLeft = '4px solid #c00';
+							notice.innerHTML = '<strong>Ups!</strong> Technická chyba. Skúste znova alebo nás kontaktujte telefonicky.';
+							form.appendChild(notice);
+						})
+						.finally(function() {
+							form.dataset.sending = '0';
+							if (submitBtn) {
+								submitBtn.disabled = false;
+								if (submitBtn.dataset.originalText) {
+									submitBtn.textContent = submitBtn.dataset.originalText;
+								}
+							}
+						});
+					});
+				});
+			});
+		});
+	});
+		"
+	);
+}
+add_action( 'wp_enqueue_scripts', 'kpk_enqueue_recaptcha_script' );
+
+
+function kpk_verify_recaptcha_v3( $token ) {
+	if ( empty( $token ) ) {
+		return false;
+	}
+
+	$secret = '6LfDJt0rAAAAAKaRvGIau8DR78uMRhPT-2fU55sV';
+
+	$response = wp_remote_post(
+		'https://www.google.com/recaptcha/api/siteverify',
+		array(
+			'body' => array(
+				'secret'   => $secret,
+				'response' => $token,
+			),
+			'timeout' => 10,
+		)
+	);
+
+	if ( is_wp_error( $response ) ) {
+		return false;
+	}
+
+	$data = json_decode( wp_remote_retrieve_body( $response ), true );
+
+	// порог по score можно регулировать
+	if (
+		! empty( $data['success'] )
+		&& isset( $data['score'] )
+		&& $data['score'] >= 0.5
+	) {
+		return true;
+	}
+
+	return false;
+}
+
+if ( ! function_exists( 'kpk_form_notice' ) ) {
+	function kpk_form_notice() {
+		//
+	}
+}
 
 // Хлебные крошки
 function kpk_breadcrumbs(){
@@ -159,60 +313,75 @@ add_action('init', function () {
   if (!wp_verify_nonce($_POST['kpk_form_nonce'], 'kpk_form')) return;
   if (!empty($_POST['hp'])) return; // honeypot
 
+  // === reCAPTCHA v3 verification ===
+  $token = isset($_POST['kpk_recaptcha_token'])
+    ? sanitize_text_field($_POST['kpk_recaptcha_token'])
+    : '';
+
+  if ( ! kpk_verify_recaptcha_v3( $token ) ) {
+    // Если запрос AJAX — вернём JSON, если нет — просто умрём с текстом
+    if ( isset($_POST['kpk_ajax']) && $_POST['kpk_ajax'] === '1' ) {
+      wp_send_json_error(['message' => 'Overenie reCAPTCHA zlyhalo. Skúste to prosím znova.']);
+    }
+    wp_die('Overenie reCAPTCHA zlyhalo. Skúste to prosím znova.');
+  }
+
   $name  = sanitize_text_field($_POST['name'] ?? '');
   $email = sanitize_email($_POST['email'] ?? '');
   $phone = sanitize_text_field($_POST['phone'] ?? '');
   $topic = sanitize_text_field($_POST['topic'] ?? '');
   $msg   = wp_kses_post($_POST['message'] ?? '');
-  if (!$name || !$email) return;
+  if (!$name || !$email) {
+    if ( isset($_POST['kpk_ajax']) && $_POST['kpk_ajax'] === '1' ) {
+      wp_send_json_error(['message' => 'Zadajte prosím meno a platný e-mail.']);
+    }
+    return;
+  }
 
   $to = sanitize_email( get_theme_mod('kpk_mail_to', get_option('admin_email')) );
   $subject = 'KPK dopyt: ' . ($topic ?: 'Nešpecifikované');
   $body = wpautop(
     "Meno: {$name}\nEmail: {$email}\nTelefón: {$phone}\nTéma: {$topic}\n\nSpráva:\n{$msg}\n\nURL: " . (wp_get_referer() ?: home_url())
   );
-  $headers = ['Content-Type: text/html; charset=UTF-8', 'Reply-To: '.$name.' <'.$email.'>'];
-
+  $headers = [
+    'Content-Type: text/html; charset=UTF-8',
+    'Reply-To: '.$name.' <'.$email.'>'
+  ];
+  error_log('KPK form mail: try to='.$to.' subject='.$subject);
+  $sent = wp_mail($to, $subject, $body, $headers);
+  error_log('KPK form mail: sent=' . ($sent ? '1' : '0'));
+	
   $sent = wp_mail($to, $subject, $body, $headers);
 
-  $is_ajax = (isset($_POST['kpk_ajax']) && $_POST['kpk_ajax'] === '1')
-          || (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest');
+  $is_ajax = (isset($_POST['kpk_ajax']) && $_POST['kpk_ajax'] === '1');
 
   if ($is_ajax) {
-    if ($sent) wp_send_json_success(['message' => __('Ďakujeme! Vaša správa bola odoslaná.','kpk')]);
-    wp_send_json_error(['message' => __('Ups — nepodarilo sa odoslať. Skúste znova alebo nás kontaktujte telefonicky.','kpk')]);
+    if ($sent) {
+      wp_send_json_success(['message' => __('Vaša správa bola odoslaná.','kpk')]);
+    }
+    wp_send_json_error(['message' => __('Nepodarilo sa odoslať. Skúste znova alebo nás kontaktujte telefonicky.','kpk')]);
   }
 
+  // запасной вариант (если вдруг форма когда-нибудь пойдёт без JS)
   $back = wp_get_referer() ?: home_url('/');
   wp_safe_redirect(add_query_arg('sent', $sent ? '1' : '0', $back));
   exit;
 });
 
-add_filter('wp_mail_from', function($from){
-  $host = parse_url(home_url(), PHP_URL_HOST);
-  return 'noreply@' . $host; // например noreply@kpkreklama.sk
-});
-add_filter('wp_mail_from_name', function($name){
-  return get_bloginfo('name');
-});
-
-add_action('wp_mail_failed', function($wp_error){
-  error_log('KPK mail failed: ' . print_r($wp_error, true));
-});
-
-
-// Small helper to print success alert
-function kpk_form_notice(){
-  if (!empty($_GET['sent'])) {
-    echo '<div class="card" style="border-left:4px solid var(--color-accent);margin:12px 0;padding:12px 16px"><strong>Ďakujeme!</strong> Vaša správa bola odoslaná.</div>';
-  }
-}
 
 // === 301 redirect: /moloplosna-tlac -> /maloplosna-tlac ===
 add_action('template_redirect', function(){
   $req = $_SERVER['REQUEST_URI'] ?? '';
   if (stripos($req, '/moloplosna-tlac') === 0) {
     wp_redirect(home_url('/maloplosna-tlac/'), 301);
+    exit;
+  }
+});
+// === 301 redirect: /profesionalny-polep-na-auto -> /polepy-vozidiel ===
+add_action('template_redirect', function(){
+  $req = $_SERVER['REQUEST_URI'] ?? '';
+  if (stripos($req, '/profesionalny-polep-na-auto') === 0) {
+    wp_redirect(home_url('/polepy-vozidiel/'), 301);
     exit;
   }
 });
@@ -282,5 +451,29 @@ $wp_customize->add_control('kpk_tech_text', [
     ]));
   }
 });
+
+
+add_action('wp_enqueue_scripts', function () {
+  $uri = get_stylesheet_directory_uri();
+  $dir = get_stylesheet_directory();
+
+  $styles = [
+    'kpk-base'       => '/assets/css/base.css',
+    'kpk-layout'     => '/assets/css/layout.css',
+    'kpk-components' => '/assets/css/components.css',
+    'kpk-utilities'  => '/assets/css/utilities.css',
+    'kpk-home'       => '/assets/css/home.css',
+  ];
+
+  foreach ($styles as $handle => $rel) {
+    $path = $dir . $rel;
+    $ver  = file_exists($path) ? filemtime($path) : null;
+    wp_enqueue_style($handle, $uri . $rel, [], $ver);
+  }
+
+  // style.css
+  $main = $dir . '/style.css';
+  wp_enqueue_style('theme', get_stylesheet_uri(), [], filemtime($main));
+}, 20);
 
 ?>

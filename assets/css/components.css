@@ -90,6 +90,25 @@
   text-align: left;
 }
 
+/* --- Google maps --- */
+.map-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* расстояние между картой и кнопкой */
+    align-items: center;
+}
+
+.map-card iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.map-btn {
+    width: 100%;
+    text-align: center;
+}
+
 /* --- People / Team --- */
 
 /* Base portrait (a larger variant appears first in original file) */
