@@ -139,10 +139,18 @@ get_header(); ?>
     <h2>Ukážky vizuálov</h2>
     <?php
       $gallery = [];
-      for ($i = 1; $i <= 6; $i++) {
+      $gallery_images = [
+        'beachflag2.webp',
+        'beachflag3.webp',
+        'beachflag4.webp',
+        'beachflag5.webp',
+        'beachflag6.webp',
+        'beachflag7.webp',
+      ];
+      foreach ($gallery_images as $idx => $file) {
         $gallery[] = [
-          'title' => 'Beach flag ukážka '.$i,
-          'img'   => get_stylesheet_directory_uri().'/assets/vystavne.webp',
+          'title' => 'Beach flag ukážka '.($idx + 1),
+          'img'   => get_stylesheet_directory_uri().'/assets/beachflag/'.$file,
         ];
       }
       $ph = get_stylesheet_directory_uri().'/assets/placeholder.jpg';
