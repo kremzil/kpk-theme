@@ -26,9 +26,9 @@
   text-decoration: none;
 }
 .hero-silent-btn {
-  background: rgba (255, 255, 255, .8);
   color: var(--color-bg);
-  border: 1px solid var(--color-border);
+  background: transparent;
+  border: 1px solid currentColor;
   border-radius: var(--radius-1);
   padding: 10px 14px;
   font-weight: 700;
@@ -446,5 +446,4 @@ body.lb-open{ overflow:hidden; }
   .seo-columns{ grid-template-columns: 1fr; }
   .seo-aside__card{ position:relative; }
 }
-
 

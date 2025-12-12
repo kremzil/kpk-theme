@@ -24,28 +24,36 @@ get_header(); ?>
     <h2>Pre koho a na čo</h2>
     <div class="grid grid-4">
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/viditelnost.webp' ); ?>')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/viditelnost.webp' ); ?>" alt="Viditeľnosť" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Viditeľnosť</h3>
           <p class="meta">Veľké formáty pritiahnu pozornosť počas dňa aj noci.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/dosah.webp' ); ?>')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/dosah.webp' ); ?>" alt="Dosah" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Dosah</h3>
           <p class="meta">Oslovíte tisíce ľudí na frekventovaných trasách.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/247.webp' ); ?>')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/247.webp' ); ?>" alt="24/7" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>24/7</h3>
           <p class="meta">Vaša kampaň funguje nepretržite, bez prepínania.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/brand.webp' ); ?>')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/outdoor/brand.webp' ); ?>" alt="Brand awareness" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Brand awareness</h3>
           <p class="meta">Buduje povedomie a podporuje predajné akcie.</p>
@@ -127,7 +135,9 @@ get_header(); ?>
     ?>
       <div class="card u-mb-2">
         <div class="grid grid-2" style="align-items:center">
-          <div class="figure" style="background-image:url('<?php echo esc_url($img); ?>')"></div>
+          <div class="figure">
+            <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:16px">
             <h3><?php echo esc_html($s['title']); ?></h3>
             <p class="meta"><?php echo esc_html($s['desc']); ?></p>
@@ -228,7 +238,9 @@ get_header(); ?>
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta"><?php echo esc_html($s['title']); ?></h3>
           </div>

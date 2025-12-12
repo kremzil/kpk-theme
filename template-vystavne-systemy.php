@@ -25,15 +25,21 @@ get_header(); ?>
     <h2>Kde sa hodí</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/vystava/stanky.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/vystava/stanky.webp' ); ?>" alt="Veľtrhy" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px"><h3>Veľtrhy</h3><p class="meta">Stánky, textilné steny a pop-up riešenia s rýchlou výmenou grafiky.</p></div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/vystava/promostol.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/vystava/promostol.webp' ); ?>" alt="Retail" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px"><h3>Retail</h3><p class="meta">Promo ostrovy, roll-upy a svetelné logá pri pokladniach a vstupoch.</p></div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/vystava/promo.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/vystava/promo.webp' ); ?>" alt="Promo" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px"><h3>Promo</h3><p class="meta">Mobilné sety pre roadshow a sampling – skladné, odolné, opakovane použiteľné.</p></div></div>
     </div>
   </div>
@@ -74,7 +80,9 @@ Pripravíme modulárne sety podľa priestoru a rozpočtu (Starter/Pro/Premium al
     foreach($subs as $s): ?>
       <div class="card u-mb-2">
         <div class="grid grid-2" style="align-items:center">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($s[5]); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($s[5]); ?>" alt="<?php echo esc_attr($s[0]); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:16px">
             <h3><?php echo esc_html($s[0]); ?></h3>
             <p class="meta"><strong>Kedy použiť:</strong> <?php echo esc_html($s[1]); ?></p>
@@ -126,7 +134,9 @@ Pripravíme modulárne sety podľa priestoru a rozpočtu (Starter/Pro/Premium al
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta">POS projekt <?php echo esc_html($s['title']); ?></h3>
           </div>

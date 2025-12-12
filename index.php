@@ -5,7 +5,15 @@
     <div class="grid grid-3">
       <?php while (have_posts()): the_post(); ?>
         <article class="card">
-          <a href="<?php the_permalink(); ?>" class="figure" aria-label="<?php the_title_attribute(); ?>"></a>
+          <a href="<?php the_permalink(); ?>" aria-label="<?php the_title_attribute(); ?>">
+            <div class="figure">
+              <?php if (has_post_thumbnail()): ?>
+                <?php the_post_thumbnail('large', ['loading' => 'lazy', 'decoding' => 'async']); ?>
+              <?php else: ?>
+                <img src="<?php echo esc_url(kpk_placeholder_url()); ?>" alt="" loading="lazy" decoding="async">
+              <?php endif; ?>
+            </div>
+          </a>
           <div style="padding:16px">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p class="meta"><?php echo get_the_date(); ?></p>

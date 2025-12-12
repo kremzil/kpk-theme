@@ -37,7 +37,9 @@ get_header(); ?>
         </p>
       </div>
       <div class="card">
-        <div class="figure is-square" style="background-image:url('<?php echo esc_url( get_stylesheet_directory_uri().'/assets/beachflag/beachflag1.webp' ); ?>')"></div>
+        <div class="figure is-square">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/beachflag/beachflag1.webp' ); ?>" alt="Beach flag" loading="lazy" decoding="async">
+        </div>
       </div>
     </div>
   </div>
@@ -166,7 +168,9 @@ get_header(); ?>
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($item['title']); ?>"
              data-index="<?php echo (int)$index; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($item['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta"><?php echo esc_html($item['title']); ?></h3>
           </div>

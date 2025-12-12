@@ -25,21 +25,27 @@ get_header(); ?>
     <h2>Prečo kartón</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/pos/lahke.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/pos/lahke.webp' ); ?>" alt="Ľahké" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Ľahké</h3>
           <p class="meta">Jednoduchý prenos a rýchle postavenie priamo v predajni.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/pos/lacne.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/pos/lacne.webp' ); ?>" alt="Lacné" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Lacné</h3>
           <p class="meta">Výborný pomer ceny a výkonu — ideálne pre krátkodobé kampane.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/pos/rychle.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/pos/rychle.webp' ); ?>" alt="Rýchla výroba" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Rýchla výroba</h3>
           <p class="meta">Prototypovanie a produkcia v krátkych termínoch, bez zložitej logistiky.</p>
@@ -120,7 +126,9 @@ Kartón je ľahký, cenovo efektívny a rýchlo vyrobiteľný materiál vhodný 
     ?>
       <div class="card u-mb-2">
         <div class="grid grid-2" style="align-items:center">
-          <div class="figure" style="background-image:url('<?php echo esc_url($img); ?>')"></div>
+          <div class="figure">
+            <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:16px">
             <h3><?php echo esc_html($s['title']); ?></h3>
             <p class="meta"><?php echo esc_html($s['desc']); ?></p>
@@ -177,7 +185,9 @@ Kartón je ľahký, cenovo efektívny a rýchlo vyrobiteľný materiál vhodný 
         $img = kpk_asset($item[2] ?? '') ?: $ph; // ← хелпер из functions.php
       ?>
         <div class="card">
-          <div class="figure" style="background-image:url('<?php echo esc_url($img); ?>')"></div>
+          <div class="figure">
+            <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($item[0]); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:16px">
             <h3><?php echo esc_html($item[0]); ?></h3>
             <p class="meta"><?php echo esc_html($item[1]); ?></p>
@@ -228,7 +238,9 @@ Kartón je ľahký, cenovo efektívny a rýchlo vyrobiteľný materiál vhodný 
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta">POS projekt <?php echo esc_html($s['title']); ?></h3>
           </div>

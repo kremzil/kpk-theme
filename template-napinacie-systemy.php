@@ -26,21 +26,27 @@ get_header(); ?>
     <h2>Výhody oproti fóliám</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/vymena.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/napinacie/vymena.webp' ); ?>" alt="Rýchla výmena kampaní" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Rýchla výmena kampaní</h3>
           <p class="meta">Grafiku vymeníte v priebehu minút bez prelepovania celých plôch.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/setrne.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/napinacie/setrne.webp' ); ?>" alt="Šetrné k vozidlu" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Šetrné k vozidlu</h3>
           <p class="meta">Bez zásahov do lakovaných bokov — vhodné aj pre operatívny leasing.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/napinacie/cena.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/napinacie/cena.webp' ); ?>" alt="Výmena plachiet do 30 minút" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Výmena plachiet do 30 minút</h3>
           <p class="meta">Nižšie náklady pri častých zmenách kampaní, menej odstávok. </p>
@@ -67,7 +73,9 @@ get_header(); ?>
 <section class="section">
   <div class="container">
       <h2>Kompatibilita</h2>
-      <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2023/06/slider-2-1024x512-1.jpg')"></div>
+      <div class="figure">
+        <img src="https://www.kpkreklama.sk/wp-content/uploads/2023/06/slider-2-1024x512-1.jpg" alt="Kompatibilita" loading="lazy" decoding="async">
+      </div>
       <div class="grid grid-2 u-mt-2">
         <?php
         $compat = [

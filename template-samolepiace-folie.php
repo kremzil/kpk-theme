@@ -25,21 +25,27 @@ get_header(); ?>
     <h2>Výhody fólií</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/vyklady.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/folie/vyklady.webp' ); ?>" alt="Flexibilita" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Flexibilita</h3>
           <p class="meta">Rozsiahle možnosti pre výklady, steny, podlahy aj vozidlá.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/aplikacia.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/folie/aplikacia.webp' ); ?>" alt="Rýchlosť aplikácie" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Rýchlosť aplikácie</h3>
           <p class="meta">Čistá montáž s minimálnym odstávkovým časom.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/cena.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/folie/cena.webp' ); ?>" alt="Cena" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Cena</h3>
           <p class="meta">Efektívne riešenie pre krátkodobé aj dlhodobé kampane.</p>
@@ -77,7 +83,9 @@ get_header(); ?>
     <!-- Výklady a pevné podklady -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/20190402_144151-1851x900-1-e1669199005437.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/20190402_144151-1851x900-1-e1669199005437.jpg" alt="Výklady a pevné podklady" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Výklady a pevné podklady</h3>
           <p class="meta">Monomerická (krátkodobé), polymerická (stredne dlhé), liata (dlhodobé a 3D), One Way Vision (perforovaná fólia na sklo). Odporúčame lamináciu pre dlhšiu životnosť a UV ochranu.</p>
@@ -94,7 +102,9 @@ get_header(); ?>
     <!-- Polepy dopravných prostriedkov -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0626-e1669200389898.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_0626-e1669200389898.jpg" alt="Polepy dopravných prostriedkov" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Polepy dopravných prostriedkov</h3>
           <p class="meta">Čiastočný (partial) alebo celoplošný (full wrap). Liata fólia s lamináciou pre tvarované diely a dlhú životnosť. Pre detailný prehľad prejdite na dedikovaný landing.</p>
@@ -107,7 +117,9 @@ get_header(); ?>
     <!-- Podlahová grafika -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-14.30.55-e1669200679605.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/Screenshot-2022-11-14-at-14.30.55-e1669200679605.jpg" alt="Podlahová grafika" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Podlahová grafika</h3>
           <p class="meta">Na hladké aj mierne štruktúrované povrchy. Antisklzné laminácie (napr. R9/R10) pre bezpečnosť v retaili a eventoch.</p>
@@ -124,7 +136,9 @@ get_header(); ?>
     <!-- Tapety / WallWrap -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_20180322_145954-1200x900-1-copy.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG_20180322_145954-1200x900-1-copy.png" alt="Tapety / WallWrap" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Tapety / WallWrap</h3>
           <p class="meta">Dekoratívne tapety a fólie pre steny, recepcie, meeting rooms. Textúrované aj hladké materiály (napr. Gecco, Arlon a i.).</p>
@@ -141,7 +155,9 @@ get_header(); ?>
         <!-- Auta -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2023/06/SpartanRace.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2023/06/SpartanRace.jpg" alt="Polep na auto" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Polep na auto</h3>
           <p class="meta">Liata fólia, Polymerická fólia, Monomerická fólia, Liata laminovacia fólia.</p>
@@ -158,7 +174,9 @@ get_header(); ?>
     <!-- Zástavky / MHD -->
     <div class="card u-mb-2">
       <div class="grid grid-2" style="align-items:center">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/POLEP-ZASTAVOK-KPKReklama.sk-fabrika-na-reklamu-03-copy.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/POLEP-ZASTAVOK-KPKReklama.sk-fabrika-na-reklamu-03-copy.png" alt="Zástavky / MHD" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Zástavky / MHD</h3>
           <p class="meta">Výlep a výmena vizuálov v zástavkách a MHD zónach. Kampaň často vyžaduje koordináciu s mestom/prevádzkovateľom — poradíme s podmienkami a termínmi.</p>
@@ -218,21 +236,27 @@ get_header(); ?>
     <h2>Technológie a povrchová úprava</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/ploter.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/folie/ploter.webp' ); ?>" alt="Tlač a rezanie" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Tlač a rezanie</h3>
           <p class="meta">Ekosolvent/UV tlač, presné rezanie na ploteri, farebná zhoda a ostré detaily.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/laminacia.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/folie/laminacia.webp' ); ?>" alt="Laminácia" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Laminácia</h3>
           <p class="meta">Mat/lesk, anti-sklz pre podlahy, UV ochrana a jednoduchšia údržba.</p>
         </div>
       </div>
       <div class="card">
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/folie/montaz.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/folie/montaz.webp' ); ?>" alt="Inštalácia" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Inštalácia</h3>
           <p class="meta">Certifikované postupy, príprava podkladu a montáž po celej SR.</p>
@@ -275,7 +299,9 @@ get_header(); ?>
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta">Fólie – projekt <?php echo esc_html($s['title']); ?></h3>
           </div>

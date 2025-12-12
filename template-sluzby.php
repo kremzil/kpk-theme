@@ -92,7 +92,9 @@ get_header(); ?>
         $img = kpk_asset($l[3] ?? '') ?: $ph; // ← хелпер из functions.php
         ?>
         <a class="card" href="<?php echo esc_url( home_url($l[2]) ); ?>">
-          <div class="figure" style="background-image:url('<?php echo esc_url($img); ?>')"></div>
+          <div class="figure">
+            <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($l[0]); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:16px">
             <h3><?php echo esc_html($l[0]); ?></h3>
             <p class="meta"><?php echo esc_html($l[1]); ?></p>
@@ -135,7 +137,9 @@ get_header(); ?>
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
         
         </div>
       <?php endforeach; ?>

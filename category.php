@@ -25,8 +25,13 @@
         <?php while(have_posts()): the_post(); ?>
           <article class="card">
             <a href="<?php the_permalink(); ?>">
-              <?php $img = get_the_post_thumbnail_url(get_the_ID(),'large'); $bg = $img ? $img : kpk_placeholder_url(); ?>
-              <div class="figure" style="background-image:url('<?php echo esc_url($bg); ?>')"></div>
+              <div class="figure">
+                <?php if (has_post_thumbnail()): ?>
+                  <?php the_post_thumbnail('large', ['loading' => 'lazy', 'decoding' => 'async']); ?>
+                <?php else: ?>
+                  <img src="<?php echo esc_url(kpk_placeholder_url()); ?>" alt="" loading="lazy" decoding="async">
+                <?php endif; ?>
+              </div>
             </a>
             <div style="padding:16px">
               <span class="label"><?php single_cat_title(); ?></span>

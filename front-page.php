@@ -114,7 +114,9 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
         if (!$img) $img = $ph;
       ?>
         <a class="card" href="<?php echo esc_url( home_url($t['url']) ); ?>" aria-label="<?php echo esc_attr($t['title']); ?>">
-          <div class="figure" style="background-image:url('<?php echo esc_url($img); ?>')"></div>
+          <div class="figure">
+            <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($t['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:16px">
             <h3><?php echo esc_html($t['title']); ?></h3>
             <p class="meta"><?php echo esc_html($t['desc']); ?></p>
@@ -144,7 +146,9 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
           $img = !empty($s['img']) ? kpk_resolve_img($s['img']) : $ph;
           ?>
           <div class="card">
-            <div class="figure is-square" style="background-image:url('<?php echo esc_url($img); ?>')"></div>
+            <div class="figure is-square">
+              <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+            </div>
             <div style="padding:12px">
               <h3><?php echo esc_html($s['title']); ?></h3>
               <p class="meta"><?php echo esc_html($s['text']); ?></p>
@@ -364,7 +368,9 @@ $hero_poster = function_exists('kpk_asset') ? kpk_asset('assets/hero-poster.jpg'
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta"><?php echo esc_html($s['title']); ?></h3>
           </div>

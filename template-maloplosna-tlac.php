@@ -43,7 +43,9 @@ get_header(); ?>
 
       <!-- PLAGÁTY -->
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/16dni_Aktivizmu_20195-scaled-copy.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/16dni_Aktivizmu_20195-scaled-copy.png" alt="Plagáty" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Plagáty</h3>
           <p class="meta">Promo do interiéru aj krátkodobý outdoor. Ostrá tlač a živé farby.</p>
@@ -58,7 +60,9 @@ get_header(); ?>
 
       <!-- LETÁKY -->
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/Pilot-letak-A4-scaled-copy-1.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/Pilot-letak-A4-scaled-copy-1.png" alt="Letáky" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Letáky</h3>
           <p class="meta">Distribúcia do schránok, promo predajní a eventy.</p>
@@ -73,7 +77,9 @@ get_header(); ?>
 
       <!-- VIZITKY -->
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/Jarkova-Dent-logomanual-upraveny-text-na-promo-2-scaled-copy.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/Jarkova-Dent-logomanual-upraveny-text-na-promo-2-scaled-copy.jpg" alt="Vizitky" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Vizitky</h3>
           <p class="meta">Čistý dizajn, ostrá typografia, prémiové papiere.</p>
@@ -88,7 +94,9 @@ get_header(); ?>
 
       <!-- BROŽÚRY & KATALÓGY -->
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/sprava_nahlad2-copy.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/sprava_nahlad2-copy.jpg" alt="Brožúry & Katalógy" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Brožúry & Katalógy</h3>
           <p class="meta">Viazanie V1 (zošívané), V2 (lepené), špirálová väzba.</p>
@@ -103,7 +111,9 @@ get_header(); ?>
 
       <!-- ETIKETY & SAMOLEPKY -->
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/nalepka7-scaled-copy-1.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/nalepka7-scaled-copy-1.png" alt="Etikety & Samolepky" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Etikety & Samolepky</h3>
           <p class="meta">Výsek do tvaru, rolky alebo hárky. Interiér/exteriér.</p>
@@ -118,7 +128,9 @@ get_header(); ?>
 
       <!-- KRABIČKY -->
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/130811925_3447138508674388_1040182268842958358_n-1-copy.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/130811925_3447138508674388_1040182268842958358_n-1-copy.jpg" alt="Krabičky" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Krabičky</h3>
           <p class="meta">Produktové a darčekové balenia s potlačou a výsekom.</p>
@@ -193,7 +205,9 @@ get_header(); ?>
              data-full="<?php echo esc_attr($full); ?>"
              data-title="<?php echo esc_attr($s['title']); ?>"
              data-index="<?php echo (int)$i; ?>">
-          <div class="figure is-square" style="background-image:url('<?php echo esc_url($thumb); ?>')"></div>
+          <div class="figure is-square">
+            <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($s['title']); ?>" loading="lazy" decoding="async">
+          </div>
           <div style="padding:12px">
             <h3 class="meta">Tlač <?php echo esc_html($s['title']); ?></h3>
           </div>

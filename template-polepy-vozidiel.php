@@ -24,7 +24,9 @@ get_header(); ?>
     <h2>Cenové balíčky</h2>
     <div class="grid grid-3">
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG-0305-scaled-copy-1.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/IMG-0305-scaled-copy-1.png" alt="Basic — logo & kontakty" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Basic — logo & kontakty</h3>
           <p class="meta">Orientačne: podľa modelu a rozsahu. Ideálne pre firemné vozidlá a flotily.</p>
@@ -38,7 +40,9 @@ get_header(); ?>
       </div>
 
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2022/11/WP_003371-scaled-copy.png')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2022/11/WP_003371-scaled-copy.png" alt="Business — partial wrap" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Business — partial wrap</h3>
           <p class="meta">Orientačne: podľa plochy, tvarov a grafiky. Silný vizuálny efekt za rozumný rozpočet.</p>
@@ -52,7 +56,9 @@ get_header(); ?>
       </div>
 
       <div class="card">
-        <div class="figure" style="background-image:url('https://www.kpkreklama.sk/wp-content/uploads/2023/06/SpartanRace.jpg')"></div>
+        <div class="figure">
+          <img src="https://www.kpkreklama.sk/wp-content/uploads/2023/06/SpartanRace.jpg" alt="Full — full wrap" loading="lazy" decoding="async">
+        </div>
         <div style="padding:16px">
           <h3>Full — full wrap</h3>
           <p class="meta">Orientačne: podľa modelu, farby a povrchu. Maximálny branding a ochrana originálneho laku.</p>
@@ -146,11 +152,15 @@ get_header(); ?>
        <div class="card">
           <div class="grid grid-2">
             <div>
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/polepy/Audi-Q5-Before.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/polepy/Audi-Q5-Before.webp' ); ?>" alt="Pred" loading="lazy" decoding="async">
+        </div>
               <div style="padding:8px"><p class="meta">Pred</p></div>
             </div>
             <div>
-        <div class="figure" style="background-image:url('<?php echo get_stylesheet_directory_uri(); ?>/assets/polepy/Audi-Q5-After.webp')"></div>
+        <div class="figure">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri().'/assets/polepy/Audi-Q5-After.webp' ); ?>" alt="Po" loading="lazy" decoding="async">
+        </div>
               <div style="padding:8px"><p class="meta">Po</p></div>
             </div>
           </div>
