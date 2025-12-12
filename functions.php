@@ -17,16 +17,6 @@ add_action('after_setup_theme', function(){
 ]);
 
 });
-add_action('wp_enqueue_scripts', function(){
-  
-  wp_enqueue_style('kpk-base', get_stylesheet_directory_uri().'/assets/css/base.css', [], KPK_VER);
-  wp_enqueue_style('kpk-layout', get_stylesheet_directory_uri().'/assets/css/layout.css', ['kpk-base'], KPK_VER);
-  wp_enqueue_style('kpk-components', get_stylesheet_directory_uri().'/assets/css/components.css', ['kpk-layout'], KPK_VER);
-  wp_enqueue_style('kpk-utilities', get_stylesheet_directory_uri().'/assets/css/utilities.css', ['kpk-components'], KPK_VER);
-  if (is_front_page()) { wp_enqueue_style('kpk-home', get_stylesheet_directory_uri().'/assets/css/home.css', ['kpk-utilities'], KPK_VER); }
-
-});
-
 // Полный URL к файлу темы по относительному пути + cache-busting по mtime
 function kpk_asset($path){
   if (!$path) return '';
@@ -350,8 +340,6 @@ add_action('init', function () {
   error_log('KPK form mail: try to='.$to.' subject='.$subject);
   $sent = wp_mail($to, $subject, $body, $headers);
   error_log('KPK form mail: sent=' . ($sent ? '1' : '0'));
-	
-  $sent = wp_mail($to, $subject, $body, $headers);
 
   $is_ajax = (isset($_POST['kpk_ajax']) && $_POST['kpk_ajax'] === '1');
 
