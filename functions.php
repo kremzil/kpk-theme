@@ -42,9 +42,55 @@ function kpk_resolve_img($v){
   return kpk_asset($v); // относительный путь → URL темы
 }
 
+// reCAPTCHA v3 keys: Customizer first, then wp-config constants
+function kpk_get_recaptcha_site_key() {
+	$key = trim((string) get_theme_mod('kpk_recaptcha_site_key', ''));
+	if ($key) return $key;
+	if (defined('KPK_RECAPTCHA_SITE_KEY')) return (string) KPK_RECAPTCHA_SITE_KEY;
+	return '';
+}
+
+function kpk_get_recaptcha_secret_key() {
+	$key = trim((string) get_theme_mod('kpk_recaptcha_secret_key', ''));
+	if ($key) return $key;
+	if (defined('KPK_RECAPTCHA_SECRET_KEY')) return (string) KPK_RECAPTCHA_SECRET_KEY;
+	return '';
+}
+
+// reCAPTCHA v3 settings in Customizer
+add_action('customize_register', function($wp_customize){
+
+  $wp_customize->add_section('kpk_recaptcha', [
+    'title'       => __('reCAPTCHA v3','kpk'),
+    'priority'    => 62,
+    'description' => __('Keys for theme forms. You can set KPK_RECAPTCHA_SITE_KEY and KPK_RECAPTCHA_SECRET_KEY in wp-config.php.','kpk'),
+  ]);
+
+  $wp_customize->add_setting('kpk_recaptcha_site_key', [
+    'default'           => defined('KPK_RECAPTCHA_SITE_KEY') ? KPK_RECAPTCHA_SITE_KEY : '',
+    'sanitize_callback' => 'sanitize_text_field',
+  ]);
+  $wp_customize->add_control('kpk_recaptcha_site_key', [
+    'section' => 'kpk_recaptcha',
+    'label'   => __('Site Key','kpk'),
+    'type'    => 'text',
+  ]);
+
+  $wp_customize->add_setting('kpk_recaptcha_secret_key', [
+    'default'           => '',
+    'sanitize_callback' => 'sanitize_text_field',
+  ]);
+  $wp_customize->add_control('kpk_recaptcha_secret_key', [
+    'section'     => 'kpk_recaptcha',
+    'label'       => __('Secret Key','kpk'),
+    'type'        => 'text',
+    'description' => __('Recommended: keep Secret out of the repo, prefer wp-config.php constant.','kpk'),
+  ]);
+});
+
 //recaptcha v3
 function kpk_enqueue_recaptcha_script() {
-	$site_key = '6LfDJt0rAAAAAJkGQ1RQpNgDAdQN_-Fd4OB-U20W';
+	$site_key = kpk_get_recaptcha_site_key();
 	if ( ! $site_key ) {
 		return;
 	}
@@ -57,6 +103,8 @@ function kpk_enqueue_recaptcha_script() {
 		null,
 		true
 	);
+
+	$site_key_js = wp_json_encode($site_key);
 
 	wp_add_inline_script(
 		'google-recaptcha-v3',
@@ -86,7 +134,7 @@ function kpk_enqueue_recaptcha_script() {
 				if (oldNotice) oldNotice.remove();
 
 				grecaptcha.ready(function() {
-					grecaptcha.execute('{$site_key}', {action: 'kpk_quote'}).then(function(token) {
+					grecaptcha.execute($site_key_js, {action: 'kpk_quote'}).then(function(token) {
 						var tokenField = form.querySelector('input[name=\"kpk_recaptcha_token\"]');
 						if (!tokenField) {
 							tokenField = document.createElement('input');
@@ -160,7 +208,10 @@ function kpk_verify_recaptcha_v3( $token ) {
 		return false;
 	}
 
-	$secret = '6LfDJt0rAAAAAKaRvGIau8DR78uMRhPT-2fU55sV';
+	$secret = kpk_get_recaptcha_secret_key();
+	if ( ! $secret ) {
+		return false;
+	}
 
 	$response = wp_remote_post(
 		'https://www.google.com/recaptcha/api/siteverify',
