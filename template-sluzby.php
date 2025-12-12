@@ -156,11 +156,12 @@ get_header(); ?>
           <h2>Požiadať o cenovú ponuku</h2>
           <p class="meta">Napíšte, s čím potrebujete pomôcť — navrhneme riešenie a termín.</p>
           <ul class="meta u-mt-1">
-            <li>• Typ služby (návrh / montáž / logistika / plnenie POS / skladovanie)</li>
-            <li>• Lokalita a termín</li>
-            <li>• Krátky popis projektu</li>
+            <li> Typ služby (návrh / montáž / logistika / plnenie POS / skladovanie)</li>
+            <li>Lokalita a termín</li>
+            <li>Krátky popis projektu</li>
           </ul>
         </div>
+        <div style="padding:16px">
         <?php kpk_form_notice(); ?>
         <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
@@ -181,6 +182,7 @@ get_header(); ?>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
           <button type="submit">Získať ponuku</button>
         </form>
+        </div>
       </div>
     </div>
   </div>

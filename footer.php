@@ -263,19 +263,44 @@
     });
 
     const stage = lb.querySelector('.lb__stage');
+    let startY = null;
+    let swipePointerId = null;
+
     stage.addEventListener('pointerdown', e=>{
       if (e.button !== 0) return;
       if (e.target.closest('.lb__btn, .lb__dots')) return;
       startX = e.clientX;
+      startY = e.clientY;
+      swipePointerId = e.pointerId;
       stage.setPointerCapture(e.pointerId);
-    });
-    stage.addEventListener('pointerup', e=>{
-      if (startX === null) return;
+    }, { passive: false });
+
+    stage.addEventListener('pointermove', e=>{
+      if (startX === null || startY === null) return;
+      if (swipePointerId !== null && e.pointerId !== swipePointerId) return;
       const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    stage.addEventListener('pointerup', e=>{
+      if (startX === null || startY === null) return;
+      if (swipePointerId !== null && e.pointerId !== swipePointerId) return;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
       startX = null;
-      if (Math.abs(dx) > 50) go(index + (dx < 0 ? 1 : -1));
+      startY = null;
+      swipePointerId = null;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) go(index + (dx < 0 ? 1 : -1));
     });
-    stage.addEventListener('pointercancel', ()=>{ startX = null; });
+
+    stage.addEventListener('pointercancel', ()=>{
+      startX = null;
+      startY = null;
+      swipePointerId = null;
+    });
 
    
     document.addEventListener('keydown', e=>{

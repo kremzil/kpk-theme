@@ -175,11 +175,12 @@ get_header(); ?>
           <h2>Požiadať o cenovú ponuku</h2>
           <p class="meta">Napíšte typ vozidla, rozmery panelov a plánovaný rozsah – pripravíme riešenie na mieru.</p>
           <ul class="meta u-mt-1">
-            <li>• Typ karosérie (dodávka/box/chladiarenská/skriňa)</li>
-            <li>• Počet plôch (boky, zadné dvere)</li>
-            <li>• Predpokladaný termín a lokalita</li>
+            <li>Typ karosérie (dodávka/box/chladiarenská/skriňa)</li>
+            <li>Počet plôch (boky, zadné dvere)</li>
+            <li>Predpokladaný termín a lokalita</li>
           </ul>
         </div>
+        <div style="padding:16px">
         <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
@@ -197,6 +198,7 @@ get_header(); ?>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
           <button type="submit">Získať ponuku</button>
         </form>
+        </div>
       </div>
     </div>
   </div>

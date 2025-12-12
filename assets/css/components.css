@@ -305,6 +305,7 @@ body.lb-open{ overflow:hidden; }
 }
 .lb__stage{
   position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:40px 56px;
+  touch-action: none; /* enable reliable horizontal swipe */
 }
 .lb__img{
   max-width:92vw; max-height:82vh; object-fit:contain; box-shadow:0 10px 30px rgba(0,0,0,.45); border-radius:12px;
@@ -446,4 +447,3 @@ body.lb-open{ overflow:hidden; }
   .seo-columns{ grid-template-columns: 1fr; }
   .seo-aside__card{ position:relative; }
 }
-

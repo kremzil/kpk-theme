@@ -258,6 +258,7 @@ get_header(); ?>
             <li>Termín a doručenie</li>
           </ul>
         </div>
+        <div style="padding:16px">
         <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
@@ -277,6 +278,7 @@ get_header(); ?>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
           <button type="submit">Získať ponuku</button>
         </form>
+        </div>
       </div>
     </div>
   </div>

@@ -279,9 +279,10 @@ get_header(); ?>
 <!-- FINÁLNY CTA -->
 <?php kpk_form_notice(); ?>
 <section id="kpk-quote" class="section bg-muted">
-  <div class="container grid grid-2">
-    <div class="card"  style="padding:16px">
-          
+  <div class="container">
+  <div class="card">
+    <div class="container grid grid-2" style="align-items:center">
+      <div style="padding:16px">
           <h2>Požiadať o cenovú ponuku</h2>
           <p class="meta">Zvyčajne odpovieme do 24 hodín. Navrhneme formáty, odporučíme lokality a pripravíme nezáväznú ponuku.</p>
           <ul class="meta u-mt-1">
@@ -289,9 +290,9 @@ get_header(); ?>
             <li>Lokalita / mesto</li>
             <li>Termín a dĺžka kampane</li>
           </ul>
-          </div>
+        </div>
 
-         
+        <div style="padding:16px">
         <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
@@ -310,8 +311,10 @@ get_header(); ?>
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
           <button type="submit">Získať ponuku</button>
         </form>
-      
-  </div>
+        </div>
+      </div>
+    </div>
+    </div>
 </section>
 
 <?php get_footer();

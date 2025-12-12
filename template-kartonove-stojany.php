@@ -335,48 +335,48 @@ Kartón je ľahký, cenovo efektívny a rýchlo vyrobiteľný materiál vhodný 
   </div>
 </section>
 
-<!-- FINÁLNY CTA (JEDNA FORMA) -->
 <?php kpk_form_notice(); ?>
 <section id="kpk-quote" class="section bg-muted">
   <div class="container">
     <div class="card">
       <div class="grid grid-2" style="align-items:center">
-        <div style="padding:16px">
-          <h2>Požiadať o cenovú ponuku</h2>
-          <p class="meta">Odpovieme do 24 hodín. Pomôže, keď uvediete typ stojana, náklad a termín.</p>
-          <ul class="meta u-mt-1">
-            <li>Podtyp (tovarový / paletový wrap / 3D / shelf stopper / krabice)</li>
-            <li>Počet ks a predajné miesta</li>
-            <li>Termín kampane a logistické požiadavky</li>
-          </ul>
+          <div style="padding:16px">
+            <h2>Požiadať o cenovú ponuku</h2>
+            <p class="meta">Odpovieme do 24 hodín. Pomôže, keď uvediete typ stojana, náklad a termín.</p>
+            <ul class="meta u-mt-1">
+              <li>Podtyp (tovarový / paletový wrap / 3D / shelf stopper / krabice)</li>
+              <li>Počet ks a predajné miesta</li>
+              <li>Termín kampane a logistické požiadavky</li>
+            </ul>
+          </div>
+          <div style="padding:16px">
+            <form id="kpk-quote-form" method="post" class="form kpk-form" aria-label="Quote form">
+            <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
+
+            <input type="text" name="name" placeholder="Meno a priezvisko" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="phone" placeholder="Telefón">
+
+            <select name="topic">
+              <option value="">Podtyp stojana</option>
+              <option>Tovarový</option>
+              <option>Paletový wrap</option>
+              <option>3D / Brána / Lama</option>
+              <option>Shelf stopper</option>
+              <option>Obal / Krabice</option>
+              <option>Iné</option>
+            </select>
+
+            <textarea name="message" rows="4" placeholder="Rozmery, počet ks, predajne, termín"></textarea>
+
+            <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
+
+            <!-- reCAPTCHA token -->
+            <input type="hidden" name="kpk_recaptcha_token" value="">
+
+            <button type="submit">Získať ponuku</button>
+          </form>
         </div>
-<form id="kpk-quote-form" method="post" class="form kpk-form" aria-label="Quote form">
-  <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
-
-  <input type="text" name="name" placeholder="Meno a priezvisko" required>
-  <input type="email" name="email" placeholder="E-mail" required>
-  <input type="tel" name="phone" placeholder="Telefón">
-
-  <select name="topic">
-    <option value="">Podtyp stojana</option>
-    <option>Tovarový</option>
-    <option>Paletový wrap</option>
-    <option>3D / Brána / Lama</option>
-    <option>Shelf stopper</option>
-    <option>Obal / Krabice</option>
-    <option>Iné</option>
-  </select>
-
-  <textarea name="message" rows="4" placeholder="Rozmery, počet ks, predajne, termín"></textarea>
-
-  <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
-
-  <!-- reCAPTCHA token -->
-  <input type="hidden" name="kpk_recaptcha_token" value="">
-
-  <button type="submit">Získať ponuku</button>
-</form>
-
       </div>
     </div>
   </div>

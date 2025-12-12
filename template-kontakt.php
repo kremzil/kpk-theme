@@ -147,6 +147,7 @@ get_header(); ?>
             <li>Iné</li>
           </ul>
         </div>
+        <div style="padding: 16px">
         <form method="post" class="form kpk-form" aria-label="Contact form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
           <input type="text" name="name" placeholder="Meno a priezvisko" required>
@@ -166,6 +167,7 @@ get_header(); ?>
 
           <button type="submit">Odoslať</button>
         </form>
+        </div>
       </div>
     </div>
   </div>

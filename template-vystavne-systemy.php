@@ -11,8 +11,8 @@ get_header(); ?>
     <h1>Výstavné systémy na eventy a predajné miesta</h1>
     <p class="meta-hero">Textilné a modulárne riešenia pre veľtrhy, retail a promo akcie. Rýchla montáž, prenosnosť a čistý vizuál.</p>
     <div class="badges" style="margin-top:12px">
-      <a class="cta-btn" href="#kpk-quote">Požiadať o cenovú ponuku</a>
-      <a class="cta-btn" href="<?php echo esc_url( home_url('/kontakt/') ); ?>">Konzultácia</a>
+      <a class="hero-btn" href="#kpk-quote">Požiadať o cenovú ponuku</a>
+      <a class="hero-silent-btn" href="<?php echo esc_url( home_url('/kontakt/') ); ?>">Konzultácia</a>
     </div>
   </div>
 </section>
@@ -87,8 +87,8 @@ Pripravíme modulárne sety podľa priestoru a rozpočtu (Starter/Pro/Premium al
             <h3><?php echo esc_html($s[0]); ?></h3>
             <p class="meta"><strong>Kedy použiť:</strong> <?php echo esc_html($s[1]); ?></p>
             <ul class="meta u-mt-1">
-              <li>• <strong>Výbava:</strong> <?php echo esc_html($s[2]); ?></li>
-              <li>• <strong>Montáž/prenos:</strong> <?php echo esc_html($s[3]); ?></li>
+              <li><strong>Výbava:</strong> <?php echo esc_html($s[2]); ?></li>
+              <li><strong>Montáž/prenos:</strong> <?php echo esc_html($s[3]); ?></li>
             </ul>
             <div class="u-mt-2">
               <a class="cta-btn" href="<?php echo esc_url($s[4]); ?>">Zistiť cenu</a>
@@ -181,11 +181,12 @@ Pripravíme modulárne sety podľa priestoru a rozpočtu (Starter/Pro/Premium al
           <h2>Požiadať o cenovú ponuku</h2>
           <p class="meta">Navrhneme optimálny set pre váš rozpočet a priestor.</p>
           <ul class="meta u-mt-1">
-            <li>• Typ akcie (veľtrh / retail / promo)</li>
-            <li>• Rozmery plochy a rozpočet</li>
-            <li>• Požadované prvky (textil, roll-up, stan, vlajky…)</li>
+            <li>Typ akcie (veľtrh / retail / promo)</li>
+            <li>Rozmery plochy a rozpočet</li>
+            <li>Požadované prvky (textil, roll-up, stan, vlajky…)</li>
           </ul>
         </div>
+        <div style="padding:16px">
         <?php kpk_form_notice(); ?>
         <form method="post" class="form kpk-form" aria-label="Quote form">
           <?php wp_nonce_field('kpk_form','kpk_form_nonce'); ?>
@@ -203,6 +204,7 @@ Pripravíme modulárne sety podľa priestoru a rozpočtu (Starter/Pro/Premium al
           <input type="text" name="hp" class="u-hide" tabindex="-1" autocomplete="off">
           <button type="submit">Získať ponuku</button>
         </form>
+        </div>
       </div>
     </div>
   </div>
