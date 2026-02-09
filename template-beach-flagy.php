@@ -92,28 +92,6 @@ get_header(); ?>
 
 <section class="section">
   <div class="container">
-    <h2>Prečo beach flagy od KPK</h2>
-    <div class="grid grid-3">
-      <?php
-      $reasons = [
-        ['Flexibilné použitie', 'Jedna konštrukcia pre interiér aj exteriér, rôzne tvary a výšky.'],
-        ['Dlhá životnosť', 'Hliník + sklolaminát odolajú poveternostným vplyvom a častému skladaniu.'],
-        ['Silná vizibilita', 'Vlajky prinášajú výrazný pohyb siete a prirodzene priťahujú pohľad okoloidúcich.'],
-      ];
-      foreach ($reasons as $card): ?>
-        <div class="card">
-          <div style="padding:16px">
-            <h3><?php echo esc_html($card[0]); ?></h3>
-            <p class="meta"><?php echo esc_html($card[1]); ?></p>
-          </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
     <h2>Technické parametre a príslušenstvo</h2>
     <div class="grid grid-2">
       <div class="card" style="padding:16px">
@@ -132,6 +110,47 @@ get_header(); ?>
           <li>Transportné vaky pre jednoduché prenášanie</li>
         </ul>
       </div>
+    </div>
+  </div>
+
+          <div class="container" style="margin-top:24px">
+          <h2>Layout a požiadavky na tlačové súbory</h2>
+          <div class="card" style="padding:16px">
+          <div class="grid grid-2">
+            <?php
+            $layout = [
+              ['Y-Standard', get_stylesheet_directory_uri().'/assets/beachflag/layout-standard.pdf'],
+              ['Rectangle', get_stylesheet_directory_uri().'/assets/beachflag/layout-rectangle.pdf']
+              ];
+            foreach ($layout as $item): ?>
+                <a class="cta-btn" style="display:flex; justify-content: space-between; align-items: center;" href="<?php echo esc_url($item[1]); ?>" target="_blank" rel="noopener">
+                Stiahnuť layout pre <?php echo esc_html($item[0]); ?> 
+                <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="margin-left:8px;vertical-align:middle"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></span>
+                </a>
+            <?php endforeach; ?>
+</section>
+
+<section class="section">
+
+
+<section class="section">
+  <div class="container">
+    <h2>Prečo beach flagy od KPK</h2>
+    <div class="grid grid-3">
+      <?php
+      $reasons = [
+        ['Flexibilné použitie', 'Jedna konštrukcia pre interiér aj exteriér, rôzne tvary a výšky.'],
+        ['Dlhá životnosť', 'Hliník + sklolaminát odolajú poveternostným vplyvom a častému skladaniu.'],
+        ['Silná vizibilita', 'Vlajky prinášajú výrazný pohyb siete a prirodzene priťahujú pohľad okoloidúcich.'],
+      ];
+      foreach ($reasons as $card): ?>
+        <div class="card">
+          <div style="padding:16px">
+            <h3><?php echo esc_html($card[0]); ?></h3>
+            <p class="meta"><?php echo esc_html($card[1]); ?></p>
+          </div>
+        </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
